@@ -2,39 +2,96 @@
 <html lang="en">  
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet"
+          href="./Bun-Bun-Bake-Shop_Style.css"/>
         <title>Shopping Cart</title>
     </head>
     
     <body>
-        <img src="assets/logo/logo-01.svg" alt="Minimalist sketch of a cinnamon roll representing Bun Bun Bake Shop."/>
-         <!-- thin weighted border goes here... not sure yet which element to make this a border of...logo? Should be width of the webpage, bottom of box -->
+        <header>
+            <section>
+                <a href="./Bun-Bun-Bake-Shop_Product-Gallery.html">
+                <img src="assets/logo/logo-01.svg" alt="Minimalist sketch of a cinnamon roll representing Bun Bun Bake Shop." class="logo-image"/>
+                </a>
+            </section>
+                
+            <div class="black-line">
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="./Bun-Bun-Bake-Shop_Product-Gallery.html"><h2>Products</h2></a></li>
+                    <li><a href="./Bun-Bun-Bake-Shop_Shopping-Cart.html"><h2 id="cart">Cart</h2></a></li>
+                </ul>
+            </nav>
 
-        <nav> <!--these 2 will need to be all caps in CSS | links don't work-->
-            <ul>
-              <li><a href="./Bun-Bun-Bake-Shop_Product-Gallery.html">Products</a></li>
-              <li><a href="./Bun-Bun-Bake-Shop_Shopping-Cart.html">Cart</a></li>
-            </ul>
-        </nav>
+            <div class="space">
+            </div>
 
-        <h2>Shopping Cart</h2>
+        </header>
+        
+        <main>
+            <section class="shopping-cart-page">
+                <p>Shopping Cart</p>
 
-        <img src="assets/products/original-cinnamon-roll.jpg" alt="Photo of a delicious original cinnamon roll on a plate."/>
+                    <article class="check-out-product">
+                        <img src="assets/products/original-cinnamon-roll.jpg" alt="Photo of a delicious original cinnamon roll on a plate." class="cart-image"/>
+                        
+                        <div class="cart-remove">
+                            <p>Remove</p>
+                        </div>
 
-        <p>Original Cinnamon Roll</p>
-        <p>Glazing: Keep original</p>
-        <p>Pack Size: 1</p>
-        <h3>$2.49</h3>
+                        <div class="shopping-description">
+                            <p>Original Cinnamon Roll</p>
+                            <p>Glazing: Keep original</p>
+                            <p>Pack Size: 1</p>
+                        </div>
 
-        <img src="assets/products/double-chocolate-cinnamon-roll.jpg" alt="Close-up photo of a delicious double-chocolate cinnamon roll."/>
-        <p>Double Chocolate Cinnamon Roll</p>
-        <p>Glazing: Sugar Milk</p>
-        <p>Pack Size: 6</p>
-        <h3>$27.45</h3>
+                        <div class="shopping-price">
+                            <p>$2.49</p>
+                        </div>
+                        
+                    </article>
 
-        <!--need a line with the same weight as the main one, but it only is as wide as the element boxes (not the entire webpage)-->
+                    <article class="check-out-product">
+                        <img src="assets/products/double-chocolate-cinnamon-roll.jpg" alt="Close-up photo of a delicious double-chocolate cinnamon roll." class="cart-image"/>
+                        
+                        <div class="cart-remove">
+                            <p>Remove</p>
+                        </div>
+                        
+                        <div class="shopping-description">
+                            <p>Double Chocolate Cinnamon Roll</p>
+                            <p>Glazing: Sugar Milk</p>
+                            <p>Pack Size: 6</p>
+                        </div>
 
-        <h3>Total: $29.94</h3>
-        <button type="button">Checkout</button>
+                        <div class="shopping-price">
+                            <p>$27.45</p>
+                        </div>
+                        
+                    </article>
+
+                    <article class="centered-line">
+                        <div class="line-center-left">
+                        </div>
+    
+                        <div class="black-line-2">
+                        </div>
+    
+                        <div class="line-center-right">
+                        </div>
+                    </article>
+
+                    <article class="check-out-total">
+                        <p>Total: $29.94</p>
+
+                        <button type="button">Checkout</button>
+                    </article>
+                
+            </section>
+        </main>
+
     </body>
 
 </html>

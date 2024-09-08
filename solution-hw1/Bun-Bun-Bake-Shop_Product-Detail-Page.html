@@ -1,46 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href="./Bun-Bun-Bake-Shop_Style.css"/>
     <title>Product Detail Page</title>
   </head>
-    <img src="assets/logo/logo-01.svg" alt="Minimalist sketch of a cinnamon roll representing Bun Bun Bake Shop."/>
-    <!--will also need to upper left justify (frog game for help)-->
-    <!--everything from here down will need to center align-->
-    <!-- thin weighted border goes here... not sure yet which element to make this a border of...logo? Should be width of the webpagem, bottom of box -->
-
-    <nav> <!--Main Nav Code modeled from w3schools.org/tags/tab_nav.aspl; understanding of making it lists vs. just nav (to get the right formatting for the mockup), I had asked a separate question and noticed how another user set up their nav with a list. I didn't directly copy but was inspired: https://stackoverflow.com/questions/72221141/why-local-images-links-dont-work-on-html-on-vs-code-->
-      <!--these 2 will need to be all caps in CSS | links don't work-->
-      <ul>
-        <li><a href="./Bun-Bun-Bake-Shop_Product-Gallery.html">Products</a></li>
-        <li><a href="./Bun-Bun-Bake-Shop_Shopping-Cart.html">Cart</a> </li>
-      </ul>
-    </nav>
-
-    <p>Our original cinnamon roll</p>
-
-    <img src="assets/products/original-cinnamon-roll.jpg" alt="Photo of the delicious original cinnamon roll on a plate."/>
-
-    <p>Customize our delicious, hand-made cinnamon roll to your liking!</p>
-    <!--this will be center aligned under the photo, unlike product gallery descriptions-->
-
-    <p>Glazing:</p>
-    <!--Code modeled from w3schools.org/tags/tag_select.asp-->
-      <select name="Glazing">
-        <option value="Keep original">Keep Original</option>
-        <option value="Sugar Milk">Sugar Milk</option>
-        <option value="Vanilla Milk">Vanilla Milk</option>
-        <option value="Double-Chocolate">Double-Chocolate</option>
-      </select>
-
-    <p>Pack Size:</p>
-    <!--drop down menu...??-->
-
-    <p>$2.49</p> 
-    <!--need to figure out a way to make the button right next to the price... with a grid in css?-->
-    <button type="button">Add to Cart</button>
   
   <body>
 
+    <header>
+      <section>
+        <a href="./Bun-Bun-Bake-Shop_Product-Gallery.html">
+          <img src="assets/logo/logo-01.svg" alt="Minimalist sketch of a cinnamon roll representing Bun Bun Bake Shop." class="logo-image"/>
+        </a>
+      </section>
+
+      <div class="black-line">
+      </div>
+      
+      <nav> 
+          <ul>
+            <li><a href="./Bun-Bun-Bake-Shop_Product-Gallery.html"><h2 id="product">Products</h2></a></li>
+            <li><a href="./Bun-Bun-Bake-Shop_Shopping-Cart.html"><h2>Cart</h2></a></li>
+          </ul>
+      </nav>
+
+      <div class="space">
+      </div>
+
+    </header>
+
+    <main>
+
+      <section class="product-detail-page">
+        <p>Our original cinnamon roll</p>
+
+        <article class="detailed-product">
+          <img src="assets/products/original-cinnamon-roll.jpg" alt="Photo of the delicious original cinnamon roll on a plate." class="detail-image"/>
+
+          <div class="product-options">
+            <p>Customize our delicious, hand-made cinnamon roll to your liking!</p>
+
+            <article class="drop-down">
+              <p>Glazing:</p>
+              <!--Code modeled from w3schools.org/tags/tag_select.asp-->
+              <select name="Glazing" class="choose">
+                <option value="Keep original">Keep Original</option>
+                <option value="Sugar Milk">Sugar Milk</option>
+                <option value="Vanilla Milk">Vanilla Milk</option>
+                <option value="Double-Chocolate">Double-Chocolate</option>
+              </select>
+            </article>
+
+            <article class="drop-down">
+              <p>Pack Size:</p>
+              <select name="Pack size" class="choose">
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="6">6</option>
+                <option value="12">12</option>
+              </select>
+            </article>
+
+            <div class="another-space">
+            </div>
+          </div>
+
+          <div class="add-to-cart">
+            <p id="indiv-price">$2.49</p> 
+
+            <button type="button">Add to Cart</button>
+          </div>
+          
+        </article>
+      
+      </section>
+
+    </main>
+
   </body>
+
 </html>

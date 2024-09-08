@@ -1,53 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href="./Bun-Bun-Bake-Shop_Style.css"/>
     <title>Product Gallery</title>
   </head>
   
   <body>
-    <img src="assets/logo/logo-01.svg" alt="Minimalist sketch of a cinnamon roll representing Bun Bun Bake Shop."/> <!-- logo svg isn't loading.. -->
-    <!--will also need to upper left justify (frog game for help)-->
-    <!--everything from here down will need to center align-->
-     <!-- thin weighted border goes here... not sure yet which element to make this a border of...logo? Should be width of the webpage, bottom of box -->
+
+    <header>
+      <section>
+          <a href="./Bun-Bun-Bake-Shop_Product-Gallery.html">
+            <img src="assets/logo/logo-01.svg" alt="Minimalist sketch of a cinnamon roll representing Bun Bun Bake Shop." class="logo-image"/>
+          </a>
+      </section>
+
+      <div class="black-line">
+      </div>
+      
+      <nav> 
+          <ul>
+            <li><a href="./Bun-Bun-Bake-Shop_Product-Gallery.html"><h2 id="product">Products</h2></a></li>
+            <li><a href="./Bun-Bun-Bake-Shop_Shopping-Cart.html"><h2>Cart</h2></a></li>
+          </ul>
+      </nav>
+
+      <div class="space">
+      </div>
     
-    <nav> <!--these 2 will need to be all caps in CSS | links don't work-->
-      <ul>
-        <li><a href="./Bun-Bun-Bake-Shop_Product-Gallery.html">Products</a></li>
-        <li><a href="./Bun-Bun-Bake-Shop_Shopping-Cart.html">Cart</a></li>
-      </ul>
-    </nav>
+    </header>
 
-    <p>Our hand-made cinnamon rolls</p> 
-    <img src="assets/products/original-cinnamon-roll.jpg" alt="Photo of the delicious original cinnamon roll on a plate."/>
-    <!--the text below will NOT be center aligned, will be left justified within the image box/div-->
-    <p>Original cinnamon roll</p>
-    <p>$2.49</p>
 
-    <img src="assets/products/apple-cinnamon-roll.jpg" alt="Photo of the delicious apple cinnamon roll on a plate."/>
-    <!--the text below will NOT be center aligned, will be left justified within the image box/div-->
-    <p>Apple cinnamon roll</p>
-    <p>$3.49</p>
+    <main>
 
-    <img src="assets/products/raisin-cinnamon-roll.jpg" alt="Close-up photo of the delicious raisin cinnamon roll."/>
-    <!--the text below will NOT be center aligned, will be left justified within the image box/div-->
-    <p>Raisin cinnamon roll</p>
-    <p>$2.99</p>
+      <section class="product-gallery-page">
+        <p>Our hand-made cinnamon rolls</p>
 
-    <img src="assets/products/walnut-cinnamon-roll.jpg" alt="Photo of the delicious walnut cinnamon roll on a plate."/>
-    <!--the text below will NOT be center aligned, will be left justified within the image box/div-->
-    <p>Walnut cinnamon roll</p>
-    <p>$3.49</p>
+        <div class="gallery-space">
+        </div>
 
-    <img src="assets/products/double-chocolate-cinnamon-roll.jpg" alt="Close-up photo of the delicious double-chocolate cinnamon roll."/>
-    <!--the text below will NOT be center aligned, will be left justified within the image box/div-->
-    <p>Double-chocolate cinnamon roll</p>
-    <p>$3.99</p>
+          <article class="prod-indiv"> <!--#1 ORIGINAL CINNAMON ROLL-->
+            
+            <a href="./Bun-Bun-Bake-Shop_Product-Detail-Page.html">
+              <img src="assets/products/original-cinnamon-roll.jpg" alt="Photo of the delicious original cinnamon roll on a plate." class="gallery-image"/>
+            </a>
 
-    <img src="assets/products/strawberry-cinnamon-roll.jpg" alt="Photo of the delicious strawberry cinnamon roll on a plate."/>
-    <!--the text below will NOT be center aligned, will be left justified within the image box/div-->
-    <p>Strawberry cinnamon roll</p>
-    <p>$3.99</p>
+            <div class="gallery-description">
+              <a href="./Bun-Bun-Bake-Shop_Product-Detail-Page.html">
+                <p>Original cinnamon roll</p>
+              </a>
+            </div>
+
+            <div class="gallery-price">
+              <p>$2.49</p>
+            </div>
+        
+          </article>
+
+         
+
+          
+
+          <div class="gallery-space">
+          </div>
+
+          <article class="prod-indiv"> <!--APPLE CINNAMON ROLL-->
+            <a href="./Bun-Bun-Bake-Shop_Product-Detail-Page.html">
+              <img src="assets/products/apple-cinnamon-roll.jpg" alt="Photo of the delicious apple cinnamon roll on a plate." class="gallery-image"/>
+            </a>
+            
+            <div class="gallery-description">
+              <a href="./Bun-Bun-Bake-Shop_Product-Detail-Page.html">
+                <p>Apple cinnamon roll</p>
+              </a>
+            </div>
+
+            <div class="gallery-price">
+              <p>$3.49</p>
+            </div>
+            
+          </article>
+
+          <div class="gallery-space">
+          </div>
+
+          <article class="prod-indiv"> <!--RAISIN CINNAMON ROLL-->
+            <a href="./Bun-Bun-Bake-Shop_Product-Detail-Page.html">
+              <img src="assets/products/raisin-cinnamon-roll.jpg" alt="Close-up photo of the delicious raisin cinnamon roll." class="gallery-image"/>
+            </a>
+            
+            <div class="gallery-description">
+              <a href="./Bun-Bun-Bake-Shop_Product-Detail-Page.html">
+                <p>Raisin cinnamon roll</p>
+              </a>
+              
+            </div>
+
+            <div class="gallery-price">
+              <p>$2.99</p>
+            </div>
+            
+          </article>
+
+          <div class="gallery-space">
+          </div>
+          
+          <article class="prod-indiv"> <!--WALNUT CINNAMON ROLL-->
+            <a href="./Bun-Bun-Bake-Shop_Product-Detail-Page.html">
+              <img src="assets/products/walnut-cinnamon-roll.jpg" alt="Photo of the delicious walnut cinnamon roll on a plate." class="gallery-image"/>
+            </a>
+            
+            <div class="gallery-description">
+              <a href="./Bun-Bun-Bake-Shop_Product-Detail-Page.html">
+                <p>Walnut cinnamon roll</p>
+              </a>
+            
+            </div>
+
+            <div class="gallery-price">
+              <p>$3.49</p>
+            </div>
+            
+          </article>
+
+          <div class="gallery-space">
+          </div>
+          
+          <article class="prod-indiv"> <!--DOUBLE CHOCOLATE CINNAMON ROLL-->
+            <a href="./Bun-Bun-Bake-Shop_Product-Detail-Page.html">
+              <img src="assets/products/double-chocolate-cinnamon-roll.jpg" alt="Close-up photo of the delicious double-chocolate cinnamon roll." class="gallery-image"/>
+            </a>
+            
+            <div class="gallery-description">
+              <a href="./Bun-Bun-Bake-Shop_Product-Detail-Page.html">
+                <p>Double-chocolate cinnamon roll</p>
+              </a>
+            
+            </div>
+
+            <div class="gallery-price">
+              <p>$3.99</p>
+            </div>
+            
+          </article>
+
+          <div class="gallery-space">
+          </div>
+          
+          <article class="prod-indiv"> <!--STRAWBERRY CINNAMON ROLL-->
+            <a href="./Bun-Bun-Bake-Shop_Product-Detail-Page.html">
+              <img src="assets/products/strawberry-cinnamon-roll.jpg" alt="Photo of the delicious strawberry cinnamon roll on a plate." class="gallery-image"/>
+            </a>
+
+            <div class="gallery-description">
+              <a href="./Bun-Bun-Bake-Shop_Product-Detail-Page.html">
+                <p>Strawberry cinnamon roll</p>
+              </a>
+        
+            </div>
+
+            <div class="gallery-price">
+              <p>$3.99</p>
+            </div>
+            
+          </article>
+
+          <div class="gallery-space">
+          </div>
+
+      </section>
+
+    </main>
 
   </body>
+
 </html>
