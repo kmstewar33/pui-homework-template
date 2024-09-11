@@ -1,7 +1,7 @@
 /*LOGO & MENU*/
 
 .header {
-    margin: auto;
+    margin: auto; /*need this to center the heading! even the flexboxes */
     box-sizing: content-box;
     width: 1200px;
 }
@@ -16,7 +16,7 @@
     border-bottom: 1px;
     border-style: solid;
     border-color: black;
-    width: 750px;
+    width: 800px;
 }
 
 .space {
@@ -24,8 +24,8 @@
 }
 
 nav {
-    margin: auto;
-    text-align: center;
+   /*margin: auto;*/
+    /*text-align: center;*/
     text-transform: uppercase;
 }
 
@@ -35,7 +35,7 @@ nav a {
 }
 
 ul  {
-    margin: auto;
+    /*margin: auto;*/
     padding-left: 10px;
     padding-top: 20px;
 }
@@ -47,13 +47,13 @@ li {
 /*PRODUCT GALLERY*/
 
 #product {
-    margin: auto;
+   /* margin: auto;
     box-sizing: content-box;
-    width: 140px;
+    width: 140px;*/
     background-color: yellow;
 }
 
-.product-gallery-page {
+.product-gallery-page { /*Main page margin seems to need to stay... for now :)*/
     margin: auto;
     box-sizing: content-box;
     width: 1200px;
@@ -295,7 +295,7 @@ button {
 
 /* SPACING */
 
-.header {
+.header {  /* we want to so that logo & rem-nav are right next to each other in a 2x1 row*/
     display: flex;
     flex-direction: row;
 }
@@ -313,20 +313,32 @@ button {
     flex-direction: column; 
     flex-grow: 3;
 }
-    .menu {
+
+.menu {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     }
 
 
-.list {
+.list { /*don't think this is doing anything because it's its own child/not a parent... weird :) */
     display: flex;
     flex-direction: row;
+    
 }
 
+.child-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.child-title
+
+/*
 .product-gallery-page {
     display: flex;
     flex-direction: row;
 }
-
+*/
 
