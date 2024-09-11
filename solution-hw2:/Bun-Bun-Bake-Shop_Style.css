@@ -27,6 +27,7 @@ nav {
     /*margin: auto;*/
     /*text-align: center;*/
     text-transform: uppercase;
+    background-color: aqua;
 }
 
 nav a {
