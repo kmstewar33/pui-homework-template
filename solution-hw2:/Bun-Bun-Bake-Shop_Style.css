@@ -91,6 +91,24 @@ li {
 
 /*PRODUCT GALLERY*/
 
+.product-gallery-page {
+    /* display: flex; */
+    /* flex-direction: row; */
+    background-color: green;
+}
+
+.row-1 {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+}
+
+.row-2 {
+    background-color: orangered;
+    display: flex;
+    flex-direction: row;
+}
+
 #product {
    /* margin: auto;
     box-sizing: content-box;
@@ -346,10 +364,5 @@ button {
     background-color: pink;
 } */
 
-/*
-.product-gallery-page {
-    display: flex;
-    flex-direction: row;
-}
-*/
+
 
