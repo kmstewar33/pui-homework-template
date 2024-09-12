@@ -96,6 +96,7 @@ li {
     margin: auto;
     box-sizing: content-box;
     width: 1200px;
+    height: 800px;
     text-align: center;
     /* background-color: green; */
 }
@@ -111,6 +112,7 @@ li {
     /* background-color: orangered; */
     display: flex;
     flex-direction: row;
+    /* justify-content: flex-start; having trouble getting this piece to align... need to understand flex behavior better */
 }
 
 #product {
@@ -121,7 +123,7 @@ li {
     margin: auto;
     box-sizing: content-box;
     width: 300px;
-    height: 400px;
+    height: 360px;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -135,6 +137,17 @@ li {
 
 .prod-indiv:hover .gallery-description {
     font-weight: bold;
+}
+
+#double-choc {
+    /* margin: auto;
+    box-sizing: content-box;
+    width: 300px; */
+    height: 400px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 25px;
 }
 
 .gallery-image {
