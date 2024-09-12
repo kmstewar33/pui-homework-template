@@ -6,10 +6,72 @@
     width: 1200px;
 }
 
+.header {  /* we want to so that logo & rem-nav are right next to each other in a 2x1 row*/
+    display: flex;
+    flex-direction: row;
+    /* background-color: pink; */
+}
+
+.header p {
+    font-size: 40px;
+}
+
+.logo {
+    flex-grow: -1;
+}
+
 .logo-image {
     width: 400px;
     text-align: left;
     border-width: 0px;
+}
+
+.rem-nav {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    flex-grow: 3;
+    /* background-color: yellowgreen; */
+}
+
+nav {
+    /*margin: auto;
+    text-align: center;*/
+    text-transform: uppercase;
+    /* background-color: aqua; */
+    height: 127px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.child-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* background-color: blueviolet; */
+}
+
+.list-item {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* background: red; */
+
+}
+
+ul  {
+    /*margin: auto;*/
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+li {
+    list-style: none;
 }
 
 .black-line {
@@ -23,26 +85,8 @@
     padding-bottom: 50px;
 }
 
-nav {
-    /*margin: auto;*/
-    /*text-align: center;*/
-    text-transform: uppercase;
-    background-color: aqua;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-}
-
-ul  {
-    /*margin: auto;*/
-    padding-left: 10px;
-    padding-top: 20px;
-}
-
-li {
-    list-style: none;
+.content-title {
+    /* background-color: brown; */
 }
 
 /*PRODUCT GALLERY*/
@@ -296,45 +340,11 @@ button {
 
 /* SPACING */
 
-.header {  /* we want to so that logo & rem-nav are right next to each other in a 2x1 row*/
-    display: flex;
-    flex-direction: row;
-}
 
-.header p {
-    font-size: 40px;
-}
-
-.logo {
-    flex-grow: -1;
-}
-
-.rem-nav {
-    display: flex;
-    flex-direction: column; 
-    flex-grow: 3;
-}
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    }
-
-
-.list { /*don't think this is doing anything because it's its own child/not a parent... weird :) */
-    display: flex;
-    flex-direction: row;
-    
-}
-
-.child-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.child-title
+/*
+.child-title {
+    background-color: pink;
+} */
 
 /*
 .product-gallery-page {
