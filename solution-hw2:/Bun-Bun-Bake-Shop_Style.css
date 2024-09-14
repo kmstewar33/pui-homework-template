@@ -1,20 +1,12 @@
 /*LOGO & MENU*/
 
 .header {
+    display: flex; /* we want to so that logo & rem-nav are right next to each other in a 2x1 row*/
+    flex-direction: row;
     margin: auto; /*need this to center the heading! even the flexboxes */
     box-sizing: content-box;
     width: 1200px;
-}
-
-.header {  /* we want to so that logo & rem-nav are right next to each other in a 2x1 row*/
-    display: flex;
-    flex-direction: row;
     /* background-color: pink; */
-}
-
-.content-title {
-    font-size: 40px;
-    padding-left: 10px;
 }
 
 .logo {
@@ -23,8 +15,9 @@
 
 .logo-image {
     width: 400px;
-    text-align: left;
     border-width: 0px;
+    text-align: left;
+    
 }
 
 .rem-nav {
@@ -36,11 +29,10 @@
 }
 
 nav {
-    /*margin: auto;
-    text-align: center;*/
+    height: 127px;
     text-transform: uppercase;
     /* background-color: aqua; */
-    height: 127px;
+    
 }
 
 nav a {
@@ -52,34 +44,27 @@ nav a {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    padding-left: 10px;
+    padding-top: 20px;
     /* background-color: blueviolet; */
 }
 
 .list-item {
-    padding-left: 50px;
-    padding-right: 50px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    padding-left: 50px;
+    padding-right: 50px;
+    list-style: none;
     /* background: red; */
 
 }
 
-ul  {
-    /*margin: auto;*/
-    padding-left: 10px;
-    padding-top: 20px;
-}
-
-li {
-    list-style: none;
-}
-
 .black-line {
+    width: 800px;
     border-bottom: 1px;
     border-style: solid;
     border-color: black;
-    width: 800px;
 }
 
 .space {
@@ -87,6 +72,8 @@ li {
 }
 
 .content-title {
+    padding-left: 10px;
+    font-size: 40px;
     /* background-color: brown; */
 }
 
@@ -102,19 +89,19 @@ li {
 }
 
 .row-1 {
-    background-color: aquamarine;
     display: flex;
     flex-direction: row;
+    /* justify-content: space-between; would think this would work if the built in spaces weren't there, probably ineffiecient to use spaces over this property*/
     height: 400px;
-    /* justify-content: space-between; */
+    /* background-color: aquamarine; */
 }
 
 .row-2 {
-    background-color: orangered;
     display: flex;
     flex-direction: row;
-    /* height: 400px; doesn't help */
     /* justify-content: flex-start; having trouble getting this piece to align... need to understand flex behavior better */
+    /* height: 400px; doesn't help */
+    /* background-color: orangered; */
 }
 
 #product {
@@ -144,7 +131,7 @@ li {
 #double-choc {
     /* margin: auto;
     box-sizing: content-box;
-    width: 300px; */
+    width: 300px; unsure of what this does/doesn't do for this piece*/
     height: 400px;
     padding-top: 10px;
     padding-left: 10px;
@@ -157,15 +144,12 @@ li {
 }
 
 .gallery-description {
-    padding-left: 10px;
-    text-align: left;
-    text-decoration: none;
-}
-
-.gallery-description {
     display: flex;
     flex-direction: column;
     justify-content: left;
+    padding-left: 10px;
+    text-align: left;
+    text-decoration: none;
 }
 
 .gallery-description a {
@@ -268,9 +252,6 @@ li {
 /*SHOPPING CART*/
 
 #cart {
-    margin: auto;
-    box-sizing: content-box;
-    width: 80px;
     background-color: yellow;
 }
 
