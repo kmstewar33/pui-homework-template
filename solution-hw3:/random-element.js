@@ -5,13 +5,14 @@ const glazingOptions = [
     {name: `Double-Chocolate`, glazingPrice: 1.50}
 ]
 
-const selectElement1 = document.querySelector(#glaze-select);
+const selectElement1 = document.querySelector("#glaze-select");
 
 function displayGlazingOptions(){
     for (let i = 0; i < glazingOptions.length; i++){
         let option = document.createElement(`option`);
         option.text = glazingOptions[i].name;
         option.value = glazingOptions[i].glazingPrice;
+        
         selectElement1.add(option);
         console.log(option);
     }
@@ -26,16 +27,20 @@ const packSize = [
     {amount: `12`, packPrice: 10},
 ]
 
-const selectElement2 = document.querySelector(#pack-select);
+const selectElement2 = document.querySelector("#pack-select");
 
 function displayPackOptions(){
-    for (let i = 0; i < displayPackOptions.length; i++){
+    for (let i = 0; i < packSize.length; i++){
         let option2 = document.createElement(`option`);
-        option.text = packSize[i].amount;
-        option.value = packSize[i].glazingPrice;
+        option2.text = packSize[i].amount;
+        option2.value = packSize[i].packPrice;
+        
         selectElement2.add(option2);
         console.log(option2);
     }
 }
 
 selectElement2.addEventListener("change", displayPackOptions)
+
+displayGlazingOptions();
+displayPackOptions();
