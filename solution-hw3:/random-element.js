@@ -18,8 +18,6 @@ function displayGlazingOptions(){
     }
 }
 
-selectElement1.addEventListener("change", displayGlazingOptions);
-
 const packSize = [
     {amount: `1`, packPrice: 1},
     {amount: `3`, packPrice: 3},
@@ -40,7 +38,34 @@ function displayPackOptions(){
     }
 }
 
-selectElement2.addEventListener("change", displayPackOptions)
+function calculatePrice(){
+    const basePrice = 2.49;
+    let glazingPrice = parseFloat(selectElement1.value);
+    let packPrice = parseFloat(selectElement2.value);
+    let newPrice = (basePrice + glazingPrice) * packPrice;
 
+    document.getElementById("indiv-price").textContent = `$${Math.round(newPrice*100)/100}`;
+
+    return newPrice;
+}
+
+function glazingChange(element) {
+    // get value of selected glazing option
+    const priceChange = element.value;
+    calculatePrice();
+
+}
+
+function packChange(element) {
+    // get value of selected glazing option
+    const priceChange = element.value;
+    calculatePrice();
+    
+  // add your code to do update the price ...
+}
+  
 displayGlazingOptions();
 displayPackOptions();
+
+selectElement1.addEventListener("change", calculatePrice);
+selectElement2.addEventListener("change", calculatePrice);

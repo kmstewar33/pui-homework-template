@@ -63,17 +63,13 @@
             <article class="drop-down">
               <p>Glazing:</p>
               <!--Code modeled from w3schools.org/tags/tag_select.asp-->
-              <select name="Glazing" class="choose" id="glaze-select">
+              <select name="Glazing" class="choose" id="glaze-select" onchange="glazingChange(this)">
               </select>
             </article>
 
             <article class="drop-down">
               <p>Pack Size:</p>
-              <select name="Pack size" class="choose" id="pack-select">
-                <!-- <option value="0">1</option>
-                <option value="1">3</option>
-                <option value="2">6</option>
-                <option value="3">12</option> -->
+              <select name="Pack size" class="choose" id="pack-select" onchange="packChange(this)">
               </select>
             </article>
 
