@@ -53,15 +53,12 @@ function glazingChange(element) {
     // get value of selected glazing option
     const priceChange = element.value;
     calculatePrice();
-
 }
 
 function packChange(element) {
     // get value of selected glazing option
     const priceChange = element.value;
     calculatePrice();
-    
-  // add your code to do update the price ...
 }
   
 displayGlazingOptions();
