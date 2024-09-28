@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href="./Bun-Bun-Bake-Shop_Style.css"/>
+    <script src="./random-element.js" defer></script>
+    <title>Product Detail Page</title>
+  </head>
+  
+  <body>
+
+    <header class="header">
+      <div class="logo">
+          <a href="./Bun-Bun-Bake-Shop_Product-Gallery-Page.html">
+            <img src="assets/logo/logo-01.svg" alt="Minimalist sketch of a cinnamon roll representing Bun Bun Bake Shop." class="logo-image"/>
+          </a>
+      </div>
+      
+      <div class="rem-nav">
+    
+        <nav> 
+            <ul class="child-list">
+              <div class="list-item">
+                <li><a href="./Bun-Bun-Bake-Shop_Product-Gallery-Page.html"><h2 id="product">Products</h2></a></li>
+              </div>
+              <div class="list-item">
+                <li><a href="./Bun-Bun-Bake-Shop_Shopping-Cart.html"><h2>Cart</h2></a></li>
+              </div>
+            </ul>
+        </nav>
+
+        <div class="black-line">
+        </div>
+
+        <div class="space">
+        </div>
+
+        <p class="content-title">Original cinnamon roll</p>
+
+        <div class="space">
+        </div>
+
+      </div>
+    
+    </header>
+
+    <main>
+
+      <section class="product-detail-page">
+
+        <img src="assets/products/original-cinnamon-roll.jpg" alt="Photo of the delicious original cinnamon roll on a plate." class="detail-image"/>
+
+        <article class="detailed-product">
+
+          <div class="product-options">
+            <p>Customize our delicious, hand-made cinnamon roll to your liking!</p>
+
+            <div class="another-space"></div>
+            </div>
+
+            <article class="drop-down">
+              <p>Glazing:</p>
+              <!--Code modeled from w3schools.org/tags/tag_select.asp-->
+              <select name="Glazing" class="choose" id="glaze-select" onchange="glazingChange(this)">
+              </select>
+            </article>
+
+            <article class="drop-down">
+              <p>Pack Size:</p>
+              <select name="Pack size" class="choose" id="pack-select" onchange="packChange(this)">
+              </select>
+            </article>
+
+            <div class="another-space">
+            </div>
+          </div>
+
+          <div class="add-to-cart">
+            <p id="indiv-price">$2.49</p> 
+
+            <button type="button">Add to Cart</button>
+          </div>
+          
+        </article>
+      
+      </section>
+
+    </main>
+
+  </body>
+
+</html>
