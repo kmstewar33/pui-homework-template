@@ -47,5 +47,3 @@ rollImage.src = './assets/products/' + rollType.toLowerCase() + '-cinnamon-roll.
 
 const rollPrice = document.querySelector('#indiv-price');
 rollPrice.innerText = '$ ' + rollType[rolls.basePrice];
-
-// calculatePrice();
