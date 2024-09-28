@@ -72,7 +72,7 @@ nav a {
     padding-bottom: 50px;
 }
 
-.content-title {
+#content-title {
     padding-left: 10px;
     font-size: 40px;
 }
@@ -171,7 +171,7 @@ nav a {
     font-size: 33px;
 }
 
-.detail-image {
+#detail-image {
     width: 600px;
     height: 600px;
 }

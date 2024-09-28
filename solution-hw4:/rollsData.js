@@ -24,3 +24,23 @@ const rolls = {
         "imageFile": "strawberry-cinnamon-roll.jpg"
     }    
 };
+
+let cart = [];
+
+const queryString = window.location.search;
+
+console.log(queryString);
+
+const params = new URLSearchParams(queryString);
+
+console.log(params);
+
+const rollType = params.get('rolls');
+
+console.log(rollType);
+
+const headerElement = document.querySelector('#content-title');
+headerElement.innerText = rollType + " cinnamon roll";
+
+const rollImage = document.querySelector('#detail-image');
+rollImage.src = './assets/products-' + rollType + '.jpg';
