@@ -43,4 +43,9 @@ const headerElement = document.querySelector('#content-title');
 headerElement.innerText = rollType + " cinnamon roll";
 
 const rollImage = document.querySelector('#detail-image');
-rollImage.src = './assets/products-' + rollType + '.jpg';
+rollImage.src = './assets/products/' + rollType.toLowerCase() + '-cinnamon-roll.jpg';
+
+const rollPrice = document.querySelector('#indiv-price');
+rollPrice.innerText = '$ ' + rollType[rolls.basePrice];
+
+// calculatePrice();
