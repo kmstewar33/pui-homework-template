@@ -54,18 +54,38 @@ class Roll {
         this.glazing = rollGlazing;
         this.size = packSize;
         this.basePrice = basePrice;
+
+        this.addToCart;
     }
-    cart.push(Roll);
-    console.log(cart);
 
 }
 
-// function addToCart(){
+function addToCart(){
+    const rollTypeElement = document.querySelector('#content-title').innerText;
+    const rollGlazingElement = document.querySelector('#glaze-select').value;
+    const packSizeElement = document.querySelector('#pack-select').value;
+    const basePriceElement = document.querySelector('#indiv-price').value;
     
-//     }
+    // rollTypeElement = this.type;
+    // rollGlazingElement = this.glazing;
+    // packSizeElement = this.packSize;
+    // basePriceElement = this.basePrice;
+    
+    const newRoll = new Roll(rollTypeElement, rollGlazingElement, packSizeElement, basePriceElement);
 
- 
- 
+    cart.push(newRoll);
+    console.log(cart);
+}
+
 const selectElement3 = document.querySelector("#cart-button");
 
 selectElement3.addEventListener("click", addToCart);
+
+    
+   
+
+
+
+
+ 
+
