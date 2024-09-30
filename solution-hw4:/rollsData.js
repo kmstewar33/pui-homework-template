@@ -61,15 +61,11 @@ class Roll {
 }
 
 function addToCart(){
-    const rollTypeElement = document.querySelector('#content-title').innerText;
-    const rollGlazingElement = document.querySelector('#glaze-select').value;
-    const packSizeElement = document.querySelector('#pack-select').value;
-    const basePriceElement = document.querySelector('#indiv-price').value;
-    
-    // rollTypeElement = this.type;
-    // rollGlazingElement = this.glazing;
-    // packSizeElement = this.packSize;
-    // basePriceElement = this.basePrice;
+
+    const rollTypeElement = rollType;
+    const rollGlazingElement = document.querySelector('#glaze-select').options[document.querySelector('#glaze-select').selectedIndex].text; /* code to grab inner options text from w3schools*/
+    const packSizeElement = document.querySelector('#pack-select').options[document.querySelector('#pack-select').selectedIndex].text; /* code to grab inner options text from w3schools*/
+    const basePriceElement = rolls[rollType].basePrice;
     
     const newRoll = new Roll(rollTypeElement, rollGlazingElement, packSizeElement, basePriceElement);
 
@@ -80,12 +76,3 @@ function addToCart(){
 const selectElement3 = document.querySelector("#cart-button");
 
 selectElement3.addEventListener("click", addToCart);
-
-    
-   
-
-
-
-
- 
-
