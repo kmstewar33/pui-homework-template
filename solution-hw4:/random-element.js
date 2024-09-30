@@ -39,7 +39,7 @@ function displayPackOptions(){
 }
 
 function calculatePrice(){
-    const basePrice = 2.49;
+    let basePrice = rolls[rollType].basePrice;
     let glazingPrice = parseFloat(selectElement1.value);
     let packPrice = parseFloat(selectElement2.value);
     let newPrice = (basePrice + glazingPrice) * packPrice;

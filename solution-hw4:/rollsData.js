@@ -46,4 +46,4 @@ const rollImage = document.querySelector('#detail-image');
 rollImage.src = './assets/products/' + rollType.toLowerCase() + '-cinnamon-roll.jpg';
 
 const rollPrice = document.querySelector('#indiv-price');
-rollPrice.innerText = '$ ' + rollType[rolls.basePrice];
+rollPrice.innerText = '$ ' + rolls[rollType].basePrice;
