@@ -47,3 +47,25 @@ rollImage.src = './assets/products/' + rollType.toLowerCase() + '-cinnamon-roll.
 
 const rollPrice = document.querySelector('#indiv-price');
 rollPrice.innerText = '$ ' + rolls[rollType].basePrice;
+
+class Roll {
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType;
+        this.glazing = rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice;
+    }
+    cart.push(Roll);
+    console.log(cart);
+
+}
+
+// function addToCart(){
+    
+//     }
+
+ 
+ 
+const selectElement3 = document.querySelector("#cart-button");
+
+selectElement3.addEventListener("click", addToCart);
