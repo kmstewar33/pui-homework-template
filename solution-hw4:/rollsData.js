@@ -57,7 +57,6 @@ class Roll {
 
         this.addToCart;
     }
-
 }
 
 function addToCart(){
