@@ -12,57 +12,101 @@ const packSize = [
     {amount: `12`, packPrice: 10},
 ]
 
-let cart = [];
+const rolls = {
+    "Original": {
+        "basePrice": 2.49,
+        "imageFile": "original-cinnamon-roll.jpg"
+    },
+    "Apple": {
+        "basePrice": 3.49,
+        "imageFile": "apple-cinnamon-roll.jpg"
+    },
+    "Raisin": {
+        "basePrice": 2.99,
+        "imageFile": "raisin-cinnamon-roll.jpg"
+    },
+    "Walnut": {
+        "basePrice": 3.49,
+        "imageFile": "walnut-cinnamon-roll.jpg"
+    },
+    "Double-Chocolate": {
+        "basePrice": 3.99,
+        "imageFile": "double-chocolate-cinnamon-roll.jpg"
+    },
+    "Strawberry": {
+        "basePrice": 3.99,
+        "imageFile": "strawberry-cinnamon-roll.jpg"
+    }    
+};
 
-rollPrice = document.querySelector("#indiv-price");
+let cart = [];
 
 class Roll {
     constructor(rollType, rollGlazing, packSize, rollPrice) {
         this.type = rollType; /* storing the role name into a property called type */
         this.glazing = rollGlazing; /* storing the glazing input into a property called glazing */
         this.size = packSize; /* storing the pack size input into a property called size */
-        this.totalPrice = rollPrice; /* storing the total roll price per role name into a property called base price */
-
-        calculatePrice();
+        this.totalPrice = this.calculatePrice(); /* storing the total roll price per role name into a property called base price */
 
         this.element = null; 
     }
 
-    function glazingPrice(){
+    glazingPrice(){
         let glazePrice = 0;
-        for(i = 0; i < glazingOptions.length; i++){
-            if glazingOptions[i] === "Keep original" || "Sugar Milk" {
+        for(i = 0; i < Roll.glazing.length; i++){
+            if (Roll.glazing === "Keep original" || Roll.glazing === "Sugar Milk") {
                 glazePrice = 0.00;
             }
-            else if glazingOptions[i] === "Vanilla Milk" {
+            else if (Roll.glazing === "Vanilla Milk") {
                 glazePrice = 0.50;
             }
-            else if glazingOptions[i] === "Double-Chocolate" {
+            else if (Roll.glazing === "Double-Chocolate") {
                 glazePrice = 1.50;
             }
         }
+        return glazePrice;
     }
 
-    function packingPrice(){
+    packingPrice(){
         let packPrice = 0;
-        for(i = 0; i < packSize.length; i++){
-            if packSize[i] === "1" {
-                packPrice
+        for(i = 0; i < Roll.size.length; i++){
+            if (Roll.size === "1") {
+                packPrice = 1;
+            }
+            if (Roll.size === "3") {
+                packPrice = 3;
+            }
+            if (Roll.size === "6") {
+                packPrice = 5;
+            }
+            if (Roll.size === "12") {
+                packPrice = 10;
             }
         }
+        return packPrice;
+    }
+
+    calculatePrice(){
+        let glze = glazingPrice();
+        let pck = packingPrice();
+
+        let totalPrice = (Roll[rollType].basePrice + glze) * pck;
+
+        return totalPrice;
+        
     }
 
 }
 
 const rollSet = new Set();
 
-function addNewRoll(rollType, rollGlazing, packSize, rollPrice, calcPrice) {
-    const bunBun = new Roll(rollType, rollGlazing, packSize, rollPrice, calcPrice);
+function addNewRoll(rollType, rollGlazing, packSize, rollPrice) {
+    const bunBun = new Roll(rollType, rollGlazing, packSize, rollPrice);
     rollSet.add(bunBun);
     return bunBun;
 }
 
-const rollOne = addNewRoll(
+const rollOne = addNewRoll (
     "Original", "Sugar Milk", "1", 
 );
 
