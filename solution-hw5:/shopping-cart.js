@@ -8,6 +8,8 @@ class Roll {
         this.glazing = rollGlazing; /* storing the glazing input into a property called glazing */
         this.size = packSize; /* storing the pack size input into a property called size */
         this.totalPrice = rollPrice; /* storing the total roll price per role name into a property called base price */
+        
+        /* Missing where to put the remove button here and in parameter */
 
         this.element = null; 
     }
