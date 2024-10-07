@@ -39,6 +39,14 @@ the function only says to cl creating an element :) */
 
 function createElement(bunBun){
     console.log("creating an element!");
+    const template = document.querySelector('#check-out-template');
+    const clone = template.content.cloneNode(true);
+    bunBun.element = clone.querySelector(".check-out-product");
+
+    const bunBunListElement = document.querySelector(".all-products");
+    bunBunListElement.appendChild(bunBun.element);
+
+    console.log(bunBun.element);
 }
 
 
