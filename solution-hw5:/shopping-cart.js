@@ -33,7 +33,9 @@ const rollFour = addNewRoll ("Apple", "Original", "3");
 for (const bunBun of rollSet) {
     console.log(bunBun);
     createElement(bunBun);
-} 
+} /* this piece looped over and created all of these right away because we nested
+createElement within the loop and then defined the function outside of the loop--right now
+the function only says to cl creating an element :) */
 
 function createElement(bunBun){
     console.log("creating an element!");
