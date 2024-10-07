@@ -2,7 +2,8 @@
 let cart = [];
 
 class Roll {
-    constructor(rollType, rollGlazing, packSize, rollPrice) {
+    constructor(rollImage, rollType, rollGlazing, packSize, rollPrice) {
+        this.image = rollImage;
         this.type = rollType; /* storing the role name into a property called type */
         this.glazing = rollGlazing; /* storing the glazing input into a property called glazing */
         this.size = packSize; /* storing the pack size input into a property called size */
@@ -16,19 +17,19 @@ class Roll {
 
 const rollSet = new Set();
 
-function addNewRoll(rollType, rollGlazing, packSize, rollPrice) {
-    const bunBun = new Roll(rollType, rollGlazing, packSize, rollPrice);
+function addNewRoll(rollImage, rollType, rollGlazing, packSize, rollPrice) {
+    const bunBun = new Roll(rollImage, rollType, rollGlazing, packSize, rollPrice);
     rollSet.add(bunBun);
     return bunBun;
 }
 
-const rollOne = addNewRoll ("Original", "Sugar Milk", "1");
+const rollOne = addNewRoll ("./assets/products/original-cinnamon-roll.jpg", "Original", "Sugar Milk", "1");
 
-const rollTwo = addNewRoll ("Walnut", "Vanilla Milk", "12");
+const rollTwo = addNewRoll ("./assets/products/walnut-cinnamon-roll.jpg", "Walnut", "Vanilla Milk", "12");
 
-const rollThree = addNewRoll ("Raisin", "Sugar Milk", "3");
+const rollThree = addNewRoll ("./assets/products/raisin-cinnamon-roll.jpg", "Raisin", "Sugar Milk", "3");
 
-const rollFour = addNewRoll ("Apple", "Original", "3");
+const rollFour = addNewRoll ("./assets/products/apple-cinnamon-roll.jpg", "Apple", "Original", "3");
 
 for (const bunBun of rollSet) {
     console.log(bunBun);
@@ -47,6 +48,20 @@ function createElement(bunBun){
     bunBunListElement.appendChild(bunBun.element);
 
     console.log(bunBun.element);
+
+    updateElement(bunBun);
+}
+
+function updateElement(bunBun){
+    const rollImageElement = bunBun.element.querySelector(".cart-image");
+    const rollTitleElement = bunBun.element.querySelector("#roll-title");
+    const rollGlazeElement = bunBun.element.querySelector("#roll-glaze");
+    const rollPackElement = bunBun.element.querySelector("#roll-size");
+
+    rollImageElement.src = bunBun.image;
+    rollTitleElement.innerText = bunBun.type + " Cinnamon Roll";
+    rollGlazeElement.innerText = "Glazing: " + bunBun.glazing;
+    rollPackElement.innerText = "Pack Size: " + bunBun.size;
 }
 
 
