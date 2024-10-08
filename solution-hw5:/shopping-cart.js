@@ -17,6 +17,35 @@ class Roll {
     /* missing a method here to calculate rollPrice... not sure how to nest this, what other pieces of code from OG JS need to be added */
 }
 
+function getGlaze(rollGlazing){
+    let lemon = 0;
+    for (let i = 0; i < glazingOptions.length; i++){
+        if (glazingOptions[i].name === rollGlazing) {
+            lemon = glazingOptions[i].glazingPrice;
+        }
+    }
+    return lemon;
+}
+
+function getPrice(packSize){
+    let grass = 0;
+    for(let i = 0; i < packSize.length; i++){
+        if (getPrice[i].amount === packSize)
+            grass = packSize[i].packPrice;
+    }
+    return grass;
+}
+
+function calculatePrice(){
+    let lemon = getGlaze();
+    let grass = getPrice();
+
+    let specificTotal = (lemon + originalPrice) * grass;
+
+    return specificTotal;
+    
+}
+
 const rollSet = new Set();
 
 function addNewRoll(rollImage, rollType, rollGlazing, packSize, rollPrice) {
