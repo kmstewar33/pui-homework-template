@@ -2,12 +2,12 @@
 let cart = [];
 
 class Roll {
-    constructor(rollImage, rollType, rollGlazing, packSize, rollPrice) {
+    constructor(rollImage, rollType, rollGlazing, packSize) {
         this.image = rollImage;
         this.type = rollType; /* storing the role name into a property called type */
         this.glazing = rollGlazing; /* storing the glazing input into a property called glazing */
         this.size = packSize; /* storing the pack size input into a property called size */
-        this.totalPrice = rollPrice; /* storing the total roll price per role name into a property called base price */
+        this.totalPrice = this.calculatePrice(); /* storing the total roll price per role name into a property called base price */
         
         /* Missing where to put the remove button here and in parameter */
 
@@ -15,36 +15,79 @@ class Roll {
     }
 
     /* missing a method here to calculate rollPrice... not sure how to nest this, what other pieces of code from OG JS need to be added */
-}
 
-function getGlaze(rollGlazing){
-    let lemon = 0;
-    for (let i = 0; i < glazingOptions.length; i++){
-        if (glazingOptions[i].name === rollGlazing) {
-            lemon = glazingOptions[i].glazingPrice;
+    function getGlaze(){
+        const glazingOptions = [
+            {name: `Keep original`, glazingPrice: 0.00},
+            {name: `Sugar Milk`, glazingPrice: 0.00},
+            {name: `Vanilla Milk`, glazingPrice: 0.50},
+            {name: `Double-Chocolate`, glazingPrice: 1.50}
+        ]
+        let lemon = 0;
+        for (let i = 0; i < glazingOptions.length; i++){
+            if (glazingOptions[i].name === this.glazing) {
+                lemon = glazingOptions[i].glazingPrice;
+            }
+            else {
+                console.log("Not listed");
+            }
         }
+        return lemon;
     }
-    return lemon;
-}
-
-function getPrice(packSize){
-    let grass = 0;
-    for(let i = 0; i < packSize.length; i++){
-        if (getPrice[i].amount === packSize)
-            grass = packSize[i].packPrice;
-    }
-    return grass;
-}
-
-function calculatePrice(){
-    let lemon = getGlaze();
-    let grass = getPrice();
-
-    let specificTotal = (lemon + originalPrice) * grass;
-
-    return specificTotal;
     
+    function getPack(){
+        const packSize = [
+            {amount: `1`, packPrice: 1},
+            {amount: `3`, packPrice: 3},
+            {amount: `6`, packPrice: 5},
+            {amount: `12`, packPrice: 10},
+        ]
+        let grass = 0;
+        for(let i = 0; i < packSize.length; i++){
+            if (getPrice[i].amount === this.size){
+                grass = packSize[i].packPrice;
+            }
+        }
+        else {
+            console.log("Not listed");
+        }
+        return grass;
+    }
+    
+    function getOriginalPrice(rollType){
+        const rolls = {
+            "Original": 2.49,
+            "Apple": 3.49,
+            "Raisin": 2.99,
+            "Walnut": 3.49,
+            "Double-Chocolate": 3.99,
+            "Strawberry": 3.99
+        };
+        let cinnamon = 0;
+        for (i = 0; i < rolls.length; i++){
+            if (rolls[i] === rollType){
+                cinnamon = rolls[i];
+            }
+            else {
+                console.log("Not listed");
+            }
+        }
+        return cinnamon;
+    }
+    
+    function calculatePrice(){
+        let lemon = getGlaze(this.glazing);
+        let grass = getPack(this.size);
+        let cinnamon = getOriginalPrice(this.type);
+    
+        const specificTotal = (lemon + cinnamon) * grass;
+    
+        return specificTotal;
+        
+    }
 }
+
+
 
 const rollSet = new Set();
 
@@ -88,11 +131,13 @@ function updateElement(bunBun){
     const rollTitleElement = bunBun.element.querySelector("#roll-title");
     const rollGlazeElement = bunBun.element.querySelector("#roll-glaze");
     const rollPackElement = bunBun.element.querySelector("#roll-size");
+    const rollSelectPrice = bunBun.element.querySelector(".shopping-price");
 
     rollImageElement.src = bunBun.image;
     rollTitleElement.innerText = bunBun.type + " Cinnamon Roll";
     rollGlazeElement.innerText = "Glazing: " + bunBun.glazing;
     rollPackElement.innerText = "Pack Size: " + bunBun.size;
+    rollSelectPrice.value = bunBun.totalPrice;
 }
 
 
