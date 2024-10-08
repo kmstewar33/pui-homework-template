@@ -14,9 +14,7 @@ class Roll {
         this.element = null; 
     }
 
-    /* missing a method here to calculate rollPrice... not sure how to nest this, what other pieces of code from OG JS need to be added */
-
-    function getGlaze(){
+    getGlaze(){
         const glazingOptions = [
             {name: `Keep original`, glazingPrice: 0.00},
             {name: `Sugar Milk`, glazingPrice: 0.00},
@@ -28,14 +26,11 @@ class Roll {
             if (glazingOptions[i].name === this.glazing) {
                 lemon = glazingOptions[i].glazingPrice;
             }
-            else {
-                console.log("Not listed");
-            }
         }
         return lemon;
     }
     
-    function getPack(){
+    getPack(){
         const packSize = [
             {amount: `1`, packPrice: 1},
             {amount: `3`, packPrice: 3},
@@ -44,17 +39,15 @@ class Roll {
         ]
         let grass = 0;
         for(let i = 0; i < packSize.length; i++){
-            if (getPrice[i].amount === this.size){
+            if (packSize[i].amount === this.size){
                 grass = packSize[i].packPrice;
             }
         }
-        else {
-            console.log("Not listed");
-        }
+
         return grass;
     }
     
-    function getOriginalPrice(rollType){
+    getOriginalPrice(){
         const rolls = {
             "Original": 2.49,
             "Apple": 3.49,
@@ -63,22 +56,14 @@ class Roll {
             "Double-Chocolate": 3.99,
             "Strawberry": 3.99
         };
-        let cinnamon = 0;
-        for (i = 0; i < rolls.length; i++){
-            if (rolls[i] === rollType){
-                cinnamon = rolls[i];
-            }
-            else {
-                console.log("Not listed");
-            }
-        }
-        return cinnamon;
+
+        return rolls[this.type];
     }
     
-    function calculatePrice(){
-        let lemon = getGlaze(this.glazing);
-        let grass = getPack(this.size);
-        let cinnamon = getOriginalPrice(this.type);
+    calculatePrice(){
+        let lemon = this.getGlaze();
+        let grass = this.getPack();
+        let cinnamon = this.getOriginalPrice();
     
         const specificTotal = (lemon + cinnamon) * grass;
     
@@ -91,8 +76,8 @@ class Roll {
 
 const rollSet = new Set();
 
-function addNewRoll(rollImage, rollType, rollGlazing, packSize, rollPrice) {
-    const bunBun = new Roll(rollImage, rollType, rollGlazing, packSize, rollPrice);
+function addNewRoll(rollImage, rollType, rollGlazing, packSize) {
+    const bunBun = new Roll(rollImage, rollType, rollGlazing, packSize);
     rollSet.add(bunBun);
     return bunBun;
 }
@@ -137,7 +122,7 @@ function updateElement(bunBun){
     rollTitleElement.innerText = bunBun.type + " Cinnamon Roll";
     rollGlazeElement.innerText = "Glazing: " + bunBun.glazing;
     rollPackElement.innerText = "Pack Size: " + bunBun.size;
-    rollSelectPrice.value = bunBun.totalPrice;
+    rollSelectPrice.innerText = "$" + bunBun.totalPrice.toFixed(2);
 }
 
 
