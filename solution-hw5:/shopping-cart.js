@@ -72,8 +72,6 @@ class Roll {
     }
 }
 
-
-
 const rollSet = new Set();
 
 function addNewRoll(rollImage, rollType, rollGlazing, packSize) {
@@ -93,15 +91,23 @@ const rollFour = addNewRoll ("./assets/products/apple-cinnamon-roll.jpg", "Apple
 for (const bunBun of rollSet) {
     console.log(bunBun);
     createElement(bunBun);
-} /* this piece looped over and created all of these right away because we nested
+} 
+
+/* this piece looped over and created all of these right away because we nested
 createElement within the loop and then defined the function outside of the loop--right now
 the function only says to cl creating an element :) */
 
 function createElement(bunBun){
     console.log("creating an element!");
+
     const template = document.querySelector('#check-out-template');
     const clone = template.content.cloneNode(true);
     bunBun.element = clone.querySelector(".check-out-product");
+
+    const btnDelete = bunBun.element.querySelector(".cart-remove");
+    btnDelete.addEventListener("click", () => {
+        deleteRoll(bunBun);
+    });
 
     const bunBunListElement = document.querySelector(".all-products");
     bunBunListElement.appendChild(bunBun.element);
@@ -125,6 +131,8 @@ function updateElement(bunBun){
     rollSelectPrice.innerText = "$" + bunBun.totalPrice.toFixed(2);
 }
 
-
-
+function deleteRoll(bunBun){
+    bunBun.element.remove();
+    rollSet.delete(bunBun);
+}
 
