@@ -8,8 +8,6 @@ class Roll {
         this.glazing = rollGlazing; /* storing the glazing input into a property called glazing */
         this.size = packSize; /* storing the pack size input into a property called size */
         this.totalPrice = this.calculatePrice(); /* storing the total roll price per role name into a property called base price */
-        
-        /* Missing where to put the remove button here and in parameter */
 
         this.element = null; 
     }
@@ -115,6 +113,9 @@ function createElement(bunBun){
     console.log(bunBun.element);
 
     updateElement(bunBun);
+
+    calculateTotalPrice();
+    
 }
 
 function updateElement(bunBun){
@@ -129,10 +130,25 @@ function updateElement(bunBun){
     rollGlazeElement.innerText = "Glazing: " + bunBun.glazing;
     rollPackElement.innerText = "Pack Size: " + bunBun.size;
     rollSelectPrice.innerText = "$" + bunBun.totalPrice.toFixed(2);
+    
 }
 
 function deleteRoll(bunBun){
     bunBun.element.remove();
     rollSet.delete(bunBun);
+    calculateTotalPrice();
 }
+
+function calculateTotalPrice(){
+    let rain = 0;
+    for (const bunBun of rollSet){
+        rain = bunBun.totalPrice + rain;
+    }
+    
+    const displayTotalElement = document.querySelector(".cost");
+    displayTotalElement.innerText = "$" + rain.toFixed(2);
+
+    return rain;
+}
+
 
