@@ -1,75 +1,3 @@
-
-let cart = [];
-
-class Roll {
-    constructor(rollImage, rollType, rollGlazing, packSize) {
-        this.image = rollImage;
-        this.type = rollType; /* storing the role name into a property called type */
-        this.glazing = rollGlazing; /* storing the glazing input into a property called glazing */
-        this.size = packSize; /* storing the pack size input into a property called size */
-        this.totalPrice = this.calculatePrice(); /* storing the total roll price per role name into a property called base price */
-
-        this.element = null; 
-    }
-
-    getGlaze(){
-        const glazingOptions = [
-            {name: `Keep original`, glazingPrice: 0.00},
-            {name: `Sugar Milk`, glazingPrice: 0.00},
-            {name: `Vanilla Milk`, glazingPrice: 0.50},
-            {name: `Double-Chocolate`, glazingPrice: 1.50}
-        ]
-        let lemon = 0;
-        for (let i = 0; i < glazingOptions.length; i++){
-            if (glazingOptions[i].name === this.glazing) {
-                lemon = glazingOptions[i].glazingPrice;
-            }
-        }
-        return lemon;
-    }
-    
-    getPack(){
-        const packSize = [
-            {amount: `1`, packPrice: 1},
-            {amount: `3`, packPrice: 3},
-            {amount: `6`, packPrice: 5},
-            {amount: `12`, packPrice: 10},
-        ]
-        let grass = 0;
-        for(let i = 0; i < packSize.length; i++){
-            if (packSize[i].amount === this.size){
-                grass = packSize[i].packPrice;
-            }
-        }
-
-        return grass;
-    }
-    
-    getOriginalPrice(){
-        const rolls = {
-            "Original": 2.49,
-            "Apple": 3.49,
-            "Raisin": 2.99,
-            "Walnut": 3.49,
-            "Double-Chocolate": 3.99,
-            "Strawberry": 3.99
-        };
-
-        return rolls[this.type];
-    }
-    
-    calculatePrice(){
-        let lemon = this.getGlaze();
-        let grass = this.getPack();
-        let cinnamon = this.getOriginalPrice();
-    
-        const specificTotal = (lemon + cinnamon) * grass;
-    
-        return specificTotal;
-        
-    }
-}
-
 const rollSet = new Set();
 
 function addNewRoll(rollImage, rollType, rollGlazing, packSize) {
@@ -138,6 +66,8 @@ function deleteRoll(bunBun){
     rollSet.delete(bunBun);
     calculateTotalPrice();
 }
+
+/* this function calculated the total of all of the indiv selections & displays on cart page @ bottom */
 
 function calculateTotalPrice(){
     let rain = 0;
