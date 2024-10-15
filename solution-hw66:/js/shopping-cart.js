@@ -2,8 +2,8 @@
 
 // const rollSet = new Set();
 
-function addNewRoll(rollImage, rollType, rollGlazing, packSize, cartID) {
-    const bunBun = new Roll(rollImage, rollType, rollGlazing, packSize, cartID);
+function addNewRoll(rollType, rollGlazing, packSize, rollPrice, cartID) {
+    const bunBun = new Roll(rollType, rollGlazing, packSize, rollPrice, cartID);
     rollSet.add(bunBun);
     return bunBun;
 }
@@ -44,9 +44,14 @@ function createElement(bunBun){
 /* start to retrieve from local storage */
 
 function retrieveFromLocalStorage(){
-    const cartItemsArrayString = localStorage.getItem("storedItems"); /* starting to pull what was saved from detail page to shopping cart page */
-    const cartItemsArray = JSON.parse(cartItemsArrayString);
+    const cartItemsFromOuterSpace = localStorage.getItem("storedItems"); /* starting to pull what was saved from detail page to shopping cart page */
+    const cartItemsArray = JSON.parse(cartItemsFromOuterSpace);
     console.log(cartItemsArray);
+
+    for(rollData of cartItemsArray) {
+        const sunshine = addNewRoll (rollData.type, rollData.glaze, rollData.size, rollData.basePrice, rollData.cartID);
+        createElement(sunshine);
+    }
 }
 
 /* creating/deleting elements based on user input */
@@ -60,7 +65,7 @@ function updateElement(bunBun){
 
     rollImageElement.src = "assets/products/" + bunBun.type.toLowerCase() + "-cinnamon-roll.jpg";
     rollTitleElement.innerText = bunBun.type + " Cinnamon Roll";
-    rollGlazeElement.innerText = "Glazing: " + bunBun.glazing;
+    rollGlazeElement.innerText = "Glazing: " + bunBun.glaze;
     rollPackElement.innerText = "Pack Size: " + bunBun.size;
     rollSelectPrice.innerText = "$" + bunBun.totalPrice.toFixed(2);
     
@@ -71,6 +76,8 @@ function deleteRoll(bunBun){
     rollSet.delete(bunBun);
     calculateTotalPrice();
 }
+
+retrieveFromLocalStorage();
 
 function calculateTotalPrice(){
     let rain = 0;

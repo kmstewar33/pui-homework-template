@@ -27,6 +27,21 @@ const rolls = {
     }   
  };
 
+ /* generating drop-down menus for glazing and pack size */
+const glazingOptions = [
+    {name: `Keep original`, glazingPrice: 0.00},
+    {name: `Sugar Milk`, glazingPrice: 0.00},
+    {name: `Vanilla Milk`, glazingPrice: 0.50},
+    {name: `Double-Chocolate`, glazingPrice: 1.50}
+]
+
+const packSize = [
+    {amount: `1`, packPrice: 1},
+    {amount: `3`, packPrice: 3},
+    {amount: `6`, packPrice: 5},
+    {amount: `12`, packPrice: 10},
+] 
+
  /* roll class - updated from past duplicates :/ */
 
  class Roll {
@@ -36,12 +51,14 @@ const rolls = {
         this.size = packSize;
         this.basePrice = rollPrice;
         this.cartID = cartID;
+
+        this.totalPrice = this.calculatePrice();
     }
 
     getGlaze(){
-        let lemon = 0;
+        let lemon = "";
         for (let i = 0; i < glazingOptions.length; i++){
-            if (glazingOptions[i].name === this.glazing) {
+            if (glazingOptions[i].name === this.glaze) {
                 lemon = glazingOptions[i].glazingPrice;
             }
         }
@@ -55,12 +72,11 @@ const rolls = {
                 grass = packSize[i].packPrice;
             }
         }
- 
         return grass;
     }
 
     getBase(){
-        return rolls[this.type.basePrice];
+        return rolls[this.type].basePrice;
     }
  
     calculatePrice(){
@@ -72,7 +88,6 @@ const rolls = {
    
         return specificTotal;
     }
- 
  }
 
  let cart = [];

@@ -1,17 +1,17 @@
 /* generating drop-down menus for glazing and pack size */
-const glazingOptions = [
-    {name: `Keep original`, glazingPrice: 0.00},
-    {name: `Sugar Milk`, glazingPrice: 0.00},
-    {name: `Vanilla Milk`, glazingPrice: 0.50},
-    {name: `Double-Chocolate`, glazingPrice: 1.50}
-]
+// const glazingOptions = [
+//     {name: `Keep original`, glazingPrice: 0.00},
+//     {name: `Sugar Milk`, glazingPrice: 0.00},
+//     {name: `Vanilla Milk`, glazingPrice: 0.50},
+//     {name: `Double-Chocolate`, glazingPrice: 1.50}
+// ]
 
-const packSize = [
-    {amount: `1`, packPrice: 1},
-    {amount: `3`, packPrice: 3},
-    {amount: `6`, packPrice: 5},
-    {amount: `12`, packPrice: 10},
-] 
+// const packSize = [
+//     {amount: `1`, packPrice: 1},
+//     {amount: `3`, packPrice: 3},
+//     {amount: `6`, packPrice: 5},
+//     {amount: `12`, packPrice: 10},
+// ] 
 
 const selectElement1 = document.querySelector("#glaze-select");
 
