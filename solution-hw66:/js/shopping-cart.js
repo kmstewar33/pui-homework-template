@@ -51,10 +51,28 @@ function retrieveFromLocalStorage(){
     for(rollData of cartItemsArray) {
         const sunshine = addNewRoll (rollData.type, rollData.glaze, rollData.size, rollData.basePrice, rollData.cartID);
         createElement(sunshine);
+        console.log(sunshine);
     }
 }
 
 /* creating/deleting elements based on user input */
+
+function deleteRoll(bunBun){
+    bunBun.element.remove();
+    // sunshine.element.remove();
+    rollSet.delete(bunBun);
+
+    for (let i = 0; i < cartLocalStorage; i++){
+        if (cartLocalStorage[i].cartID === bunBun.cartID){
+            cartLocalStorage.splice(i,1);
+            break;
+        }
+    }
+
+    saveToLocalStorage();
+    console.log(localStorage);
+    calculateTotalPrice();
+}
 
 function updateElement(bunBun){
     const rollImageElement = bunBun.element.querySelector(".cart-image");
@@ -69,12 +87,6 @@ function updateElement(bunBun){
     rollPackElement.innerText = "Pack Size: " + bunBun.size;
     rollSelectPrice.innerText = "$" + bunBun.totalPrice.toFixed(2);
     
-}
-
-function deleteRoll(bunBun){
-    bunBun.element.remove();
-    rollSet.delete(bunBun);
-    calculateTotalPrice();
 }
 
 retrieveFromLocalStorage();
