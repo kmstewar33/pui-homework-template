@@ -76,4 +76,6 @@ const rolls = {
  }
 
  let cart = [];
+
+ const rollSet = new Set();
  

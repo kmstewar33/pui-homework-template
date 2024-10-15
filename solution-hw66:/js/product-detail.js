@@ -66,12 +66,22 @@ function calculateIndivPrice(){
     let packPrice = parseFloat(selectElement2.value);
     let newPrice = (basePrice + glazingPrice) * packPrice;
  
- 
     document.getElementById("indiv-price").textContent = `$${Math.round(newPrice*100)/100}`;
- 
  
     return newPrice;
 }
+
+function glazingChange(element) {
+    // get value of selected glazing option
+    const priceChange = element.value;
+    calculateIndivPrice();
+ }
+ 
+ function packChange(element) {
+    // get value of selected glazing option
+    const priceChange = element.value;
+    calculateIndivPrice();
+ }
 
 displayGlazingOptions();
 displayPackOptions();
@@ -81,7 +91,7 @@ selectElement2.addEventListener("change", calculateIndivPrice);
 
 /* adding selected options to cart */
 
-let cartLocalStorage = JSON.parse(localStorage.setItem('storedItems', cartItemsString)); /* creating a variable to hold parsed cart string so it can be pulled from storage (cannot pull string as is) */
+let cartLocalStorage = []; /* creating a variable to hold parsed cart string so it can be pulled from storage (cannot pull string as is) */
 
 function addToCart(){
 
@@ -93,10 +103,11 @@ function addToCart(){
  
     const basePriceElement = rolls[rollType].basePrice;
 
-    let cartID = Date.now(); /* code modeled from w3 schools */
-    cartID.toString(); /* code modeled from w3 schools */
+    let cartID = Date.now().toString(); /* code modeled from w3 schools */
    
     let newRoll = new Roll(rollTypeElement, rollGlazingElement, packSizeElement, basePriceElement, cartID);
+
+    rollSet.add(newRoll); /* saving to my set since I need it for my shopping cart page html outline */
  
     cartLocalStorage.push(newRoll); /* saving to local storage now vs just the cart area that gets lost in the browser */
     
@@ -111,12 +122,12 @@ function addToCart(){
  /* local storage for product detail cart selection */
 
  function saveToLocalStorage() {
-    const cartItemsArray = Array.from(cartLocalStorage);
-    console.log(cartLocalStorage);
+    // const cartItemsArray = Array.from(rollSet);
+    // console.log(rollSet);
 
-    const cartItemsString = JSON.stringify(cartItemsArray);
-    console.log(cartItemsString);
+    const cartItemsArrayString = JSON.stringify(cartLocalStorage);
+    console.log(cartItemsArrayString);
 
-    localStorage.setItem('storedItems', cartItemsString); /* we are creating a key & attaching the value of cartItemsString aka JSON version of cart/cart.push */
+    localStorage.setItem('storedItems', cartItemsArrayString); /* we are creating a key & attaching the value of cartItemsString aka JSON version of cart/cart.push */
     
   }
