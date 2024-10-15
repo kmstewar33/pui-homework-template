@@ -80,7 +80,4 @@ function saveToLocalStorage(){
     const rollArray = Array.from(rollSet); /* now that shopping-cart.js is linked to detail, should pull*/
     /* or is Array.from(rollSet) just from cart that's ref on this page? */
     console.log(rollArray); /* printing selection to be saved to the console */
-
-    const rollArrayString = JSON.stringify(rollArray);
-    console.log(rollArrayString);
 }
