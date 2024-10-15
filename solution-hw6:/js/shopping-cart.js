@@ -62,7 +62,7 @@ function deleteRoll(bunBun){
     // sunshine.element.remove();
     rollSet.delete(bunBun);
 
-    for (let i = 0; i < cartLocalStorage; i++){
+    for (let i = 0; i < cartLocalStorage.length; i++){
         if (cartLocalStorage[i].cartID === bunBun.cartID){
             cartLocalStorage.splice(i,1);
             break;
