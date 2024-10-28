@@ -217,7 +217,7 @@ It would be important for the videos to have clear semantic controls and annotat
 
 ![Digital Camera as Augmented Visual Perception - Website Sketch](Images/AUGI-CAM.JPG)
 
-This site would be a central viewing space for a final project for the Augmenting Intelligence class entitled "Digital Camera as Augmented Visual Perception" and would showcase an array of films inspired by the same prompt. The site would also seek to explain the concept of augmented visual perception.
+This site would be a central viewing space for a final project for the Augmenting Intelligence class entitled "Digital Camera as Augmented Visual Perception" and would showcase an array of individual films inspired by the same prompt. The site would also seek to explain the concept of augmented visual perception.
 
 The sun in the center of the homepage would spin upon click to randomly select a video play suggestion for the user. Carefully placed and labeled video slots within the CSS flexbox would be important to spatially orient the multitude of videos. 
 
@@ -229,12 +229,16 @@ This site would create a toolkit that facilitates a mixture of top-down and bott
 
 The toolkit page would provide a series of if/then statements that would help the user think through the process of working with their dataset by narrowing down the algorithms that would most likely match their dataset. Like most of the proposed designs, I would need to be careful to ensure that the visual information is screen reader accessible at minimum with greater thought put into cognitive and haptic abilities. 
 
-…
-
 ## Feedback Summary
 
-Summarize all the critiques you received during the lab session (\~300 words). 
+The feedback I received was as follows:
+
+#1-- didn't generate any feedback, feels the most safe/least novel out of all of the ideas.
+
+#2-- have all of the videos displayed play simultaneously, as long as they do not have corresponding audio (they cautioned that would be overwhelming). Make sure to ask both professors if it would be allowed to create a website in one class for a class project in another class.
+
+#3-- should be able to use an API & flexbox to take the user input for the mindmap/vocab hover and click, as long as you call the API correctly, could create a class for the mindmap (not sure if I translated the notes correctly). for the homepage content, start with an image describing the difference between visual-spatial/top-down and linear/bottom-up learning processes. Make sure that learning or understanding the content doesn't overshadow your process of building the website considering the timeline/turnaround for the project (~5-6 weeks at this point); also maybe instead of focusing the content to this particular supervised machine learning class, think about machine learning vocabulary that has been introduced to the general public in the last year. Try using the Orbit Control animation from p5.js for the mindmap page.
 
 ## Feedback Digestion
 
-Digest the feedback you got in the lab (\~300 words). Indicate which critique you will act on in your next design and why you chose to incorporate/dismiss pieces of critique.
+I will take the advice not to continue working on any type of portfolio, however, I would likely return to project #1 in the future. I think whatever interactive visuals I create between #2 and #3 will help me create the Experience Moodboard idea for that site. In order to continue with #2, I would need to check in with both professors, and I plan on attending office hours this week to do so because I am torn between my remaining 2 ideas. #2 would be a challenge to ensure accessibility, but the content would be easy to simulate, so the focus would be on ensuring peak usability for a visual-heavy site. #3 seems the most direct and interesting out of all of my ideas and could easily incorporate both an API, library and animation. I would likely need to scale down from the greater idea to a smaller scope to complete this project in the given timeframe. Moving forward, I will still check-in for permission to use idea #2, but I will likely move forward with setting up a smaller scope for idea #3 that focuses on the homepage and the intro page. I will also review my understanding of the supervised machine learning vocabulary versus machine learning vocabulary that is available to the general public.
