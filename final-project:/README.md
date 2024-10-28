@@ -219,7 +219,7 @@ It would be important for the videos to have clear semantic controls and annotat
 
 This site would be a central viewing space for a final project for the Augmenting Intelligence class entitled "Digital Camera as Augmented Visual Perception" and would showcase an array of individual films inspired by the same prompt. The site would also seek to explain the concept of augmented visual perception.
 
-The sun in the center of the homepage would spin upon click to randomly select a video play suggestion for the user. Carefully placed and labeled video slots within the CSS flexbox would be important to spatially orient the multitude of videos. 
+The sun in the center of the homepage would spin upon click to randomly select a video play suggestion for the user. Carefully placed and labeled video slots within the CSS flexbox would be important to spatially orient the multitude of videos. In order to be fully accessible, the videos would need to be laid out and organized for a screen reader to navigate without being cumbersome and there would need to be a navigation bar introduced to move through the site as expected. 
 
 ### *Supervised Machine Learning for Visual-Spatial Learners*
 
