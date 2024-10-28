@@ -204,7 +204,7 @@ How would you use Generative AI responsibly?
 
 ### *Idea 1*
 
-![title for sketch1](images/sketch1.png)
+![Weddings x Barbie - Portfolio Website](BARBI3-1.JPG) (BARBI3-2.JPG)
 
 Add a few sentences about your design. Briefly state the motivation of each project idea. Example questions to answer:
 
