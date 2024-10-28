@@ -204,21 +204,30 @@ How would you use Generative AI responsibly?
 
 ### *Wedding Videographer Portfolio*
 
-![Weddings x Barbie - Experiences & About](Images/BARBI3-1.JPG) 
 ![Weddings x Barbie - Home Page & Pricing](Images/BARBI3-2.JPG)
+![Weddings x Barbie - Experiences & About](Images/BARBI3-1.JPG) 
 
-Add a few sentences about your design. Briefly state the motivation of each project idea. Example questions to answer:
+Weddings x Barbie is looking to launch their low-budget home video-like wedding videography services for Summer 2025. The proposed website would showcase their pricing packages (#2) and mission statement/about (#3) and allow potential couples to explore stylistic inspiration (#1) before booking with Barbie.
 
-* What is the basic idea of your final project? (1-2 sentences)  
-* How do you plan to make your design interactive and engaging?  
-* How do you plan to make your design accessible?  
-* What information do you specifically want to convey and include on your website?
+Barbie's main homevideo will play automatically and then scrolling down will animate to the homepage, revealing other key pages. The Experience page would contain an interactive moodboard generator for potential couples to explore ideas. 
 
-### *Idea 2*
+It would be important for the videos to have clear semantic controls and annotations for users accessing the site via screenreaders and all other haptic and cognitive heuristics will need to be followed so that the automatic video playing or interactive moodboard can be accessed by any and all interested couples.
 
-…
+### *Digital Camera as Augmented Visual Perception*
 
-### *Idea 3*
+![Digital Camera as Augmented Visual Perception - Website Sketch](Images/AUGI-CAM.JPG)
+
+This site would be a central viewing space for a final project for the Augmenting Intelligence class entitled "Digital Camera as Augmented Visual Perception" and would showcase an array of films inspired by the same prompt. The site would also seek to explain the concept of augmented visual perception.
+
+The sun in the center of the homepage would spin upon click to randomly select a video play suggestion for the user. Carefully placed and labeled video slots within the CSS flexbox would be important to spatially orient the multitude of videos. 
+
+### *Supervised Machine Learning for Visual-Spatial Learners*
+
+![Supervised Machine Learning for Visual-Spatial Learners - Website Sketch](Images/ML-4-VS.jpg)
+
+This site would create a toolkit that facilitates a mixture of top-down and bottom-up thinking for anyone approaching a supervised machine learning problem. The intro page would provide a hand-drawn concept map giving an overview of all of the technical terminology encountered in a supervised machine learning problem. Upon hovering over a vocab word, the corresponding concept within the hand-drawn map would also be highlighted. Clicking on the vocab word would provide a pop-up box giving a definition. 
+
+The toolkit page would provide a series of if/then statements that would help the user think through the process of working with their dataset by narrowing down the algorithms that would most likely match their dataset. Like most of the proposed designs, I would need to be careful to ensure that the visual information is screen reader accessible at minimum with greater thought put into cognitive and haptic abilities. 
 
 …
 
