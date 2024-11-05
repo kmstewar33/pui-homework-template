@@ -162,6 +162,8 @@ Here is my update of the home page. I added a pop-out that reiterates the defini
 
 ![machine disco - vocabulary page: vocabulary word bank differentiation](Images/hi-fi_02_updated.png)
 
+For the word bank update, I am still not sure how to rearrange the layout to make it simpler for the user to perceive all of this dense information at once without breaking up my drawing and overall concept of a one-size-fits all mental map. In order to start to break up and differentiate what I have, I bolded out every other word in order to make them standout within the "paragraph"/block of text that kind of onslaughts the user upon arrival. It is hard to see in the prototype now, but I also have the main visual overview map as a hoverable entity. After working with user #2, I realized the importance to the goal of the site and consideration of different learning styles how important it would be to have the image itself be interactive.
+
 ## Feedback Summary
 
 For the homepage, a few suggestions were given based on the users' intuitions--adding a line to visually separate the human learning styles from machine learning styles would diminish the cognitive overload of looking at the familiar and unfamiliar information all at once. Another user recommended adding the ability to keep multiple hovers visible at the same time, so the user could compare and contrast select learning styles as desired. Other users were interested in each drawing enough that they expected to be able to click on the drawing and reveal more information about the different learning styles, however, at the moment, this was not built into my prototype. 
