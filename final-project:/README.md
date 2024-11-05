@@ -156,9 +156,11 @@ Overall, working with these users made me rethink how I think the information sh
 
 ## Updated Designs
 
+![machine disco - home page: video page pop-out](Images/hi-fi_01_updated-1.png)
+
 Here is my update of the home page. I added a pop-out that reiterates the definition of the learning style for each of the 4 learning types presented and then included a video of someone else explaining the concept from youtube. Having an outside source explain the different learning styles in a visual way is valuable in that different people will explain concepts in different ways, so using these separate teachers to explain concepts to users will help them connect with the material in a different way than just reading the material. If the video provided doesn't help, they are close enough to youtube via the embed to seek out other materials themselves.  
 
-![machine disco - home page: video page pop-out](Images/hi-fi_01_updated-1.png)
+![machine disco - vocabulary page: vocabulary word bank differentiation](Images/hi-fi_02_updated-1.png)
 
 ## Feedback Summary
 
