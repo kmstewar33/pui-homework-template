@@ -208,14 +208,14 @@ Outline how you plan to use Generative AI tools to aid in the implementation (\~
  What would you use? Edit the list given your plan. For each tool, explain briefly on what do you expect Generative AI to help you with and what might it not be able to help you with.
 
 * ChatGPT  
-  * I will use it for … because it can help me …  
-  * I will not use it for … because it might not be able to help me with …   
-* GitHub Copilot  
-* ...
+  * I will use it for organizing my workflow in relation to my project in particular because it can help me make sure I understand the scope of the project, especially parts of the process I am unfamiliar with while balancing the timeline. For example, how long would it take me as a novice to implement a js library using interactive images.
+  * I will not use it for directly copying code likely (unless it was automating a process for me, such as typing out all of the vocab words per it's class--not even sure if that's useful to me) because it might not be able to help me with fully understanding why the code I am using works. However, I would likely ask it what a piece of code means so I can folow-up with better sources outside of ChatGPT versus having to hunt through forums or websites trying to directly locate the syntax/etc that is confusing me.   
+* Perplexity
+  * I will use it for checking my understanding of supervised machine learning tools in relation to one another, almost like asking a tutor on the fly. I would prefer Perplexity to ChatGPT for this because it will cite sources so I can go follow-up with those on my own.
 
 ### *Responsible Use*
 
-How would you use Generative AI responsibly? 
+When I interact with ChatGPT, I mostly use it as a way to process my existing thoughts and make connection, as well as to ask it top-down queries to give me a starting point to figure out something I am completely new to and unsure about. I also ask it to help me sort through workflows. I would use Generative AI responsibly by not copying and pasting exactly what it tells me. I would prefer to reinterpret what it has told me in my own words to futher my own understanding. If I did use it in part of my code, I would cite the source and consult an external source such as the MDN website or W3Schools or Substack to see how others would frame the code from a human perspective and why. I would mostly use GenAI as a reference for context while working through my problems, and I would likely not copy anything directly from it, other than (not sure if it could even get to this point at its current state) having it format each word I end up using and all of it's details into a class structure for each word I end up using, for example. I could also see myself using it to synthesize machine learning concepts as needed or to check my own understanding of those concepts in relation to one another because sometimes I get confused and switch them. I would likely use Perplexity to do this since that tool links sources, whereas with ChatGPT, you're relying on information taken from unknown sources.
 
 ---
 
