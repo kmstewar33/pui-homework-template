@@ -133,13 +133,13 @@ machine disco will give an overview of the differences in learning between human
 
 ### *Prototype 1*
 
-![machine disco - homepage](images/prototype1.png)
+![machine disco - homepage](Images/hi-fi_01_user-testing.png)
 
 The purpose of this page is to orient the users in the differences between human and machine learning styles via interactive drawings. The overarching goal is to be able to compare and contrast and apply this abstract thought to the following processes: learning the vocabulary to work through a supervised machine learning problem. The users I interviewed were able to discern the visual information and relevance as well as easily interact with the site via the hover information reveals.
 
 ### *Prototype 2*
 
-![machine disco - vocabulary words](images/prototype1.png)
+![machine disco - vocabulary words](Images/hi-fi_02_user-testing.png)
 
 The purpose of this page is to show the users an overview of how all of the terms in the vocabulary word bank relate to one another with the help of the visual overview/sketch. Users should be able to hover over a term they want to know more about and the site will reveal the textual description of the word, as well as highlight the word's function or position within the visual overview/sketch. The users I interviewed were unclear on how to interact with this portion of the site. User #1 used their familiarity with the hover interaction to try to engage with the information, but was initially confused and put off by the large word bank of text until they discovered the ability to hover. User #2 overlooked the vocabulary word bank and immediately started to look at and parse through the visual overview/sketch presented towards the bottom of the page.
 
@@ -156,7 +156,7 @@ Overall, working with these users made me rethink how I think the information sh
 
 ## Updated Designs
 
-Show screenshots of your updated design based on the user feedback (\<100 words, \~2 images).
+Here is my update of the home page. I added a pop-out that reiterates the definition of the learning style for each of the 4 learning types presented and then included a video of someone else explaining the concept from youtube. Having an outside source explain the different learning styles in a visual way is valuable in that different people will explain concepts in different ways, so using these separate teachers to explain concepts to users will help them connect with the material in a different way than just reading the material. If the video provided doesn't help, they are close enough to youtube via the embed to seek out other materials themselves.  
 
 ![machine disco - home page: video page pop-out](Images/hi-fi_02_updated-1.png)
 
