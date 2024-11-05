@@ -181,23 +181,31 @@ Outline weekly milestones to plan your expected implementation progress until th
 - [ ] Week 9 Oct 28 \- Nov 1:
   - [X] FP1 due
   
-- [ ] Week 10 Nov 4 \- Nov 8:   
-  - [ ] FP2 due
-  - [ ] Decide on a 
-
-- [ ] Week 11 Nov 11 \- Nov 15:  
-- [ ] Week 12 Nov 18 \- Nov 22:   
-- [ ] Week 13 Nov 25 \- Nov 29:  
-
+- [ ] Week 10 Nov 4 \- Nov 8: (18 hours)
+  - [ ] FP2 due (8 hours)
+  - [ ] Seriously confirm the validity of using a library to help with the image interaction aspect of the vocabulary page (really unsure of how to do this currently) (3 hours)
+  - [ ] Gather all of the necessary content (drawings, definitions, storytelling process, video links) for both the homepage and glossary (4 hours)
+  - [ ] Practice using the library with the images I draw because I am not sure how they will work together (3 hours)
+- [ ] Week 11 Nov 11 \- Nov 15: (12 hours)
+  - [ ] FP3 due (3 hours)
+  - [ ] layout the html & css of both main pages (4 hours)
+  - [ ] understand if I need to have other pages created (ex. one per word on the vocabulary page that will be swapped between hover/click interactions) in order to make the entire thing work (1 hour)
+  - [ ] use javascript on the home page interactions including hovers, pop-out of the video information (4 hours)
+- [ ] Week 12 Nov 18 \- Nov 22: (15 hours)
+  - [ ] use javascript to tell the story of the 3 most important pieces of the supervised machine learning process, inconjunction with the library (the backup would be to incorporate animations at this stage) (5 hours each)
+- [ ] Week 13 Nov 25 \- Nov 29: (15 hours)
+  - [ ] finish any aspect of this that has overflowed into this week (5 hours)
+  - [ ] time permitting, layout the html of the toolkit page and incorporate a js behavior that links an aspect of it to the glossary (5 hours)
+  - [ ] time permitting, offer some if/then statements around one example of a dataset you could start to use to train a machine learning model (5 hours)
   - [ ] Thanksgiving  
-- [ ] Week 14 Dec 2 \- Dec 6:  
+- [ ] Week 14 Dec 2 \- Dec 6: (9 hours)
   - [ ] FP4 due 
+  - [ ] fill out final overview in this file (3 hours)
+  - [ ] make sure everything required to turn in (home page, vocab page) is polished enough to use (6 hours)
 
 ### *Libraries and Other Components*
-
-List the JS libraries and other components (if applicable) that you plan to use. 
-* 
-
+ 
+ I will be using the svg.js library to ideally manipulate the drawings I produce so that they are interactive with the words in the glossary. Otherwise, I will use svg.js to find an animation workaround to highlight the visual placement of each vocabulary word in the glossary story flow.
 
 ## Generative AI Use Plan
 
