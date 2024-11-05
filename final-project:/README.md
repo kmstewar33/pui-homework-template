@@ -125,31 +125,48 @@ Remember to keep track of your prompts and usage for [FP4 writeup](#part-6-gener
 
 ## Project Description
 
-Briefly restate your motivation and a short description of your project.
+My website, machine disco, is intended to teach people that are unfamiliar with machine learning processes the different learning styles machines posses. This is set in contrast with the different learning styles and intelligences humans posses.
+
+machine disco will give an overview of the differences in learning between humans and machines on the home page, and then, start to teach humans the language of machine learning via a visual glossary on the second most important page. The goal is that, eventually (and if they are especially curious), the human user can attempt to train their own supervised machine learning model using a problem solving toolkit included in the site (the third most important page and a flex goal for this final project).
 
 ## High-Fi Prototypes
 
 ### *Prototype 1*
 
-![title for prototype1](images/prototype1.png)
+![machine disco - homepage](images/prototype1.png)
 
-A brief description and summary of the user feedback (\<100 words, 2 images) 
+The purpose of this page is to orient the users in the differences between human and machine learning styles via interactive drawings. The overarching goal is to be able to compare and contrast and apply this abstract thought to the following processes: learning the vocabulary to work through a supervised machine learning problem. The users I interviewed were able to discern the visual information and relevance as well as easily interact with the site via the hover information reveals.
 
 ### *Prototype 2*
 
-…
+![machine disco - vocabulary words](images/prototype1.png)
+
+The purpose of this page is to show the users an overview of how all of the terms in the vocabulary word bank relate to one another with the help of the visual overview/sketch. Users should be able to hover over a term they want to know more about and the site will reveal the textual description of the word, as well as highlight the word's function or position within the visual overview/sketch. The users I interviewed were unclear on how to interact with this portion of the site. User #1 used their familiarity with the hover interaction to try to engage with the information, but was initially confused and put off by the large word bank of text until they discovered the ability to hover. User #2 overlooked the vocabulary word bank and immediately started to look at and parse through the visual overview/sketch presented towards the bottom of the page.
+
 
 ## Usability Test
 
-Discuss the user feedback you got during the evaluation / usability test (\~300 words). Indicate which feedback you implemented, inspired new directions, or otherwise influenced your final design. 
+Both users testing the site interactions for my intial prototype were people who were not familiar with machine learning, from humanities backgrounds and professionally work in the academic publishing industry (one literature, the other film studies). 
+
+The home screen and introduction to machine disco was generally simple for each user to interact with via the hover feature over each design. Each enjoyed the playful style of the hand drawn illustrations and described them as adding a "human" element to the site. One user said that it was easier for them to begin hovering over the images to learn more about each one because the layout was similar to a learning module used at their workplace. The first user quickly moved through the hovering aspect of the design and was looking for more information by clicking the images, but this was not considered in my design. The other user parsed through the hover information entirely without an interest in clicking before being prompted to move to the next task. It seemed like an interesting difference between a top-down vs. bottom-up approach to processing the visual and unfamiliar information unique to each users' default/preferred ways of interacting with the visual world (based on knowing them).
+
+They both approached the vocabulary page differently. Not all of the words were live for the prototype, so user #1 scanned the vocab word bank and vocab visual sketch overview trying to find an active defintion based on their knowledge of using the hover to engage with the home page previously. User #2 very interestingly skipped the vocab word bank and went straight to the image. The image was not live for selecting words or aspects of the image during the prototype, so they were not able to understand the purpose of interacting with the site until prompted. Both users said the vocab word bank looked like a paragraph/sentence/overall monolith, and one recommended differentiating the differences between words to make them stand out as words instead of longer syntax structures. The other user said it would be more helpful to be able to interact directly with the image. Both were unsure of how the information would apply to their daily lives but were curious enough to engage with the site. 
+
+Overall, working with these users made me rethink how I think the information should be presented versus the information should be presented in a way that, while creative, is still standardized enough to be understood by the user group. The user group is likely to be people unfamiliar with machine learning, so all mental energy should be relegated to the learning tasks--not the interaction tasks. I also was able to see how different learners interpret the information. I am thinking going forward, I need to figure out a different way to layout the information on the vocabulary page, especially considering the overwhelm of the vocabulary word bank.
 
 ## Updated Designs
 
 Show screenshots of your updated design based on the user feedback (\<100 words, \~2 images).
 
+![machine disco - home page: video page pop-out](Images/hi-fi_02_updated-1.png)
+
 ## Feedback Summary
 
-Summarize the feedback you received in the lab session and discuss how it influenced your design (\~300 words). 
+For the homepage, a few suggestions were given based on the users' intuitions--adding a line to visually separate the human learning styles from machine learning styles would diminish the cognitive overload of looking at the familiar and unfamiliar information all at once. Another user recommended adding the ability to keep multiple hovers visible at the same time, so the user could compare and contrast select learning styles as desired. Other users were interested in each drawing enough that they expected to be able to click on the drawing and reveal more information about the different learning styles, however, at the moment, this was not built into my prototype. 
+
+For the vocabulary page, one suggestion was to rename the page the glossary, which would make sense and be interesting in contrast with the (eventual) problem solving tool kit page where you need to be able to reference the machine learning terms in order to help make decisions about what to do with the machine learning model. Many of the feedback reflected the confusion around the mass of the word bank, even with the small improvement to the word bank layout. One of the feedbacks given was to potentially break up the monolith of all of the words blending together into pieces, like telling a story of the process itself. Another user said that perhaps the overall idea of keeping the terms together and in relation to each other could still happen at the top of the page, but that then other users could continue to scroll down and process each aspect of the supervised machine learning terms in a process. 
+
+I was pretty stumped on how to use Figma to redevelop my vocabulary page prototype outside of my intial ideas after the user testing this weekend, so the advice of my colleagues/users was very helpful. I wish I had more time to research what exactly would be best for this specific project because I think it ultimately requires a lot of care to ensure 1) the visual-spatial learning aspect is designed with integrity and 2) that the machine learning information presented in machine disco is relevant to the targeted user base. I think that my drive to create the project out of my own need and curiousity was good, however, trying to organize the information in a way that is meaningful to others outside of myself is a challenge. Going forward, I am going to attempt the storytelling recommendation as a base goal because I think this way of explaining the information in smaller pieces will be more encouraging to people that don't know as much about machine learning as I do. Then, as a flex goal within or even outside of this course, I would return to my overarching idea of having the big map and using that as the main tool for users to interact with and learn about supervised machine learning. However! I think it would be more useful to include this aspect of the glossary, as I am now calling it, within the problem solving toolkit page. By then, the user would have learned enough about the terms piece-by-piece that having that overarching visual reference sheet would be way less overwhelming. In building out the storytelling glossary page as a base goal, I will likely keep the layers of data set words vs. algorithm words vs. overall supervised machine learning words, but I might simplify them a little bit by removing a few extraneous ones, just for myself to get the project done in the given timeframe and for the user when first learning this schema.
 
 ## Milestones
 
@@ -159,10 +176,10 @@ Outline weekly milestones to plan your expected implementation progress until th
 
 - [ ] Week 9 Oct 28 \- Nov 1:
   - [X] FP1 due
-  - [ ] ...
   
 - [ ] Week 10 Nov 4 \- Nov 8:   
   - [ ] FP2 due
+  - [ ] Decide on a 
 
 - [ ] Week 11 Nov 11 \- Nov 15:  
 - [ ] Week 12 Nov 18 \- Nov 22:   
