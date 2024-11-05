@@ -201,11 +201,7 @@ List the JS libraries and other components (if applicable) that you plan to use.
 
 ## Generative AI Use Plan
 
-Outline how you plan to use Generative AI tools to aid in the implementation (\~300 words).
-
 ### *Tool Use*
-
- What would you use? Edit the list given your plan. For each tool, explain briefly on what do you expect Generative AI to help you with and what might it not be able to help you with.
 
 * ChatGPT  
   * I will use it for organizing my workflow in relation to my project in particular because it can help me make sure I understand the scope of the project, especially parts of the process I am unfamiliar with while balancing the timeline. For example, how long would it take me as a novice to implement a js library using interactive images.
