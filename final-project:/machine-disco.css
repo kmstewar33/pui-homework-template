@@ -1,3 +1,5 @@
+/* main navigation */
+
 .md-header {
     background-color: fuchsia;
     color: white;
@@ -28,9 +30,24 @@
     justify-content: space-between;
 }
 
+.md-logo a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
 .md-page {
     align-self: flex-end;
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 14px;
+    text-decoration: none;
+    color: white;
 }
+
+/* home page */
+
