@@ -52,7 +52,6 @@ nav a {
 /* home page */
 
 #humans-vs-machines {
-    padding-top: 10px;
     padding-bottom: 10px;
 }
 
@@ -63,16 +62,17 @@ nav a {
 }
 
 .main-content h1 {
-    font-size: 66px;
+    font-size: 44px;
 }
 
 .main-content h2 {
-    font-size: 33px;
+    font-size: 22px;
 } 
 
 .grid {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 img {
@@ -87,7 +87,9 @@ img {
 }
 
 .grid-section {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #start-demo-btn button {
@@ -99,10 +101,10 @@ img {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 66px;
+    font-size: 33px;
 }
 
 #start-demo-btn {
-    padding-top: 66px;
-    padding-bottom: 100px;
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
