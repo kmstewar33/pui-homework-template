@@ -52,7 +52,7 @@ nav a {
 /* cover */
 
 #machine-disco-space {
-    height: 100px;
+    height: 150px;
 }
 
 #machine-disco-color {
@@ -100,6 +100,22 @@ nav a {
 
 #machines {
     color: #653FF0;
+}
+
+#visual-spatial {
+    color: #F7286D;
+}
+
+#logical-mathematical {
+    color: #4EAB7F;
+}
+
+#supervised {
+    color: #765FCF;
+}
+
+#unsupervised {
+    color: #FF6ACD;
 }
 
 #humans-vs-machines {
