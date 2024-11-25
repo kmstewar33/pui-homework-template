@@ -14,8 +14,9 @@ const learningType = {
         "musicIcon": "visual-spatial_music.jpg",
         "musicDefinition": "programming, building systems, observing patterns in nature, writing mysteries, music composition",
         "bookIcon": "logical-mathematical_book.jpg",
-        "bookDefinition": ""
+        "bookDefinition": "Numbers pulse, reason flows, a lattice where the order grows. Mind computes; the cosmos shows."
     },
+    
     "Supervised": {
         "styleIcon": "supervised.jpg",
         "styleDefinition": "the computational ability to predict outcomes and recognize patterns from data sets organized and labeled by humans",
@@ -35,14 +36,15 @@ const learningType = {
  };
 
 class Learn {
-    constructor (rollType, rollGlazing, packSize, rollPrice, cartID){
-        this.type = rollType;
-        this.glaze = rollGlazing;
-        this.size = packSize;
-        this.basePrice = rollPrice;
-        this.cartID = cartID;
-
-        this.totalPrice = this.calculatePrice();
+    constructor (learningType, styleIcon, styleDefinition, musicIcon, musicDefinition, bookIcon, bookDefinition){
+        this.styleName = learningType;
+        this.styleImg = styleIcon;
+        this.styleText = styleDefinition;
+        this.musicImg = musicIcon;
+        this.musicText = musicDefinition;
+        this.bookImg = bookIcon;
+        this.bookText = bookDefinition;
     }
  
  }
+
