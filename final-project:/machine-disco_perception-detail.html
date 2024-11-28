@@ -12,46 +12,45 @@
     <body>
         <nav class="md-header">
             
-            <div class="md-header-text">
+            <div class="md-header-text"> <!-- redundant -->
                 <div class="md-logo">
                     <a href="./machine-disco_cover.html"><h1 id="machine-disco">machine disco</h1></a>
                 </div>
 
-                <class class="md-nav">
+                <div class="md-nav">
                     <a href="./machine-disco_perception-glossary.html"><h3 class="md-page">glossary</h3></a>
                     <a href="./machine-disco_toolkit.html"><h3 class="md-page">toolkit</h3></a>
-                </class>
+                </div>
             </div>
             
         </nav>
 
         <main class="main-content">
-            <div >
-                <h1 class="perception-style">visual-spatial</h1>
-            </div>
-            
-            <div class="grid"> <!-- the grid layout -->
+            <header class="learning-style"><h1>visual-spatial</h1></header>
+            <section class="row-formal">
+                <!-- main image, needs a class for all perception images -->
+                 <img src="./Images/visual-spatial.jpg" alt="hand drawn doodle of an eye, 3D cube, map trail and abstract shape" class="style-img"/>
+                <!-- formal defintion, needs a class for all definitions -->
+                 <h2 class="style-definition">the human ability to think in images and pictures--the capacity to visualize accurately and abstractly</h2>
+            </section>
 
-                <div class="formal"> <!-- the first row --> 
-
-                    <div class="perception-image"><img src="./Images/visual-spatial.jpg"/></div>
-                    
-                    <div class="perception-definition"><h2>the human ability to think in images and pictures--the capacity to visualize accurately and abstractly</h2></div>
+            <section class="row-informal">
+                <div class="activity">
+                <!-- image for activity (music)-->
+                 <img src="./Images/visual-spatial_music.jpg" alt="wired headphones connected to an iPod shuffle" class="activity-img"/>
+                 
+                  <h2 class="activity-description">drawing diagrams, making collages, taking photos, puzzles, playing sports, using maps</h2>
+                 <!-- image for poem (book)-->
                 </div>
-
-                <div class="informal"> <!-- the second row -->
-                    <div class="activity-image"><img src="./Images/visual-spatial_music.jpg"/></div>
-
-                    <div class="activity-text">
-                        <p>drawing diagrams, making collages, taking photos, puzzles, playing sports, using maps</p>
-                    </div>
-                </div>
-
-            </div>
+                
+                <div class="poem">
+                    <img src="./Images/visual-spatial_book.jpg" alt="open journal that says 'once upon a time'..." class="poem-img"/>
+                <!-- poem text -->
+                    <h2 class="poem-text">patterns hum, shapes entwine, a dance of lines, a realm divine. eyes map the maze; space speaks: design.</h2>
+                </div> 
+            </section>
             
         </main>
-
-
 
     </body>
 </html>

@@ -181,3 +181,16 @@ img {
     padding-top: 30px;
     padding-bottom: 40px;
 }
+
+/* detail */
+
+.row-formal {
+    display: flex;
+    flex-direction: row;
+}
+
+.row-informal {
+    display: flex;
+    flex-direction: row;
+}
+
