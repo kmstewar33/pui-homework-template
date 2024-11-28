@@ -160,6 +160,10 @@ img {
     align-items: center;
 }
 
+.grid-section a {
+    text-decoration: none;
+}
+
 #start-demo-btn button {
     background-color: rgb(194, 56, 194); 
     border: none;
