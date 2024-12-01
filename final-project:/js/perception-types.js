@@ -1,4 +1,4 @@
-const learningType = {
+const perceptions = {
     "Visual-Spatial": {
         "styleIcon": "visual-spatial.jpg",
         "styleDefinition": "the human ability to think in images and pictures--the capacity to visualize accurately and abstractly",
@@ -36,14 +36,15 @@ const learningType = {
  };
 
 class Learn {
-    constructor (learningType, styleIcon, styleDefinition, musicIcon, musicDefinition, bookIcon, bookDefinition){
-        this.styleName = learningType;
+    constructor (perceptionType, styleIcon, styleDefinition, musicIcon, musicDefinition, bookIcon, bookDefinition){
+        this.styleName = perceptionType;
         this.styleImg = styleIcon;
         this.styleText = styleDefinition;
         this.musicImg = musicIcon;
         this.musicText = musicDefinition;
         this.bookImg = bookIcon;
         this.bookText = bookDefinition;
+        console.log("create a new learning style!");
     }
  
  }
