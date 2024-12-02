@@ -1,3 +1,12 @@
+/* testing */
+
+console.log("started application");
+
+function updateElement() {
+    console.log("running the element update function!");
+}
+
+
 /* setting up params & outline for each roll */
 const queryString = window.location.search;
 console.log(queryString);
@@ -12,7 +21,4 @@ const headerElement = document.querySelector('#learning-style');
 headerElement.innerText = perceptionType + " perception";
 
 const styleIcon = document.querySelector('.style-img');
-styleIcon.src = './Images/' + perceptionType.toLowerCase() + '.jpg';
-
-const styleText = document.querySelector('.style-definition');
-styleText.innerText = '$ ' + rolls[rollType].basePrice;
+styleIcon.src = './Images/' + perceptionType + '.jpg';
