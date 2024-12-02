@@ -1,4 +1,4 @@
-const perceptions = {
+const perception = {
     "visual-spatial": {
         "styleDefinition": "the human ability to think in images and pictures--the capacity to visualize accurately and abstractly"
     },
