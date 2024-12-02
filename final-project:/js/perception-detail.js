@@ -15,5 +15,4 @@ const styleIcon = document.querySelector('#style-img');
 styleIcon.src = './Images/' + perceptionType + '.jpg';
 
 const styleDefinition = document.querySelector('#style-definition');
-styleDefinition.innerText = perception.definition;
-
+styleDefinition.innerText = perception[perceptionType].definition;
