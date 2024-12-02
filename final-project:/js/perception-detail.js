@@ -8,7 +8,7 @@ console.log(params);
 const perceptionType = params.get('perceptions');
 console.log(perceptionType);
 
-const styleName = document.querySelector('.learning-style');
+const headerElement = document.querySelector('#learning-style');
 headerElement.innerText = perceptionType + " perception";
 
 const styleIcon = document.querySelector('.style-img');
