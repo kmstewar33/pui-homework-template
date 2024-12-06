@@ -16,3 +16,9 @@ styleIcon.src = './Images/' + perceptionType + '.jpg';
 
 const styleDefinition = document.querySelector('#style-definition');
 styleDefinition.innerText = perception[perceptionType].definition;
+
+const musicIcon = document.querySelector('#activity-img');
+musicIcon.src = './Images/' + perceptionType + '_music.jpg';
+
+const bookIcon = document.querySelector('#poem-img');
+bookIcon.src = './Images/' + perceptionType + '_book.jpg';
