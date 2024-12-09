@@ -226,14 +226,39 @@ nav a {
     flex-direction: column;
 }
 
+.row-informal img {
+    width: 300px;
+    height: 250px;
+}
+
+#activity-img {
+    cursor: pointer; /* Indicate that the image is clickable */
+}
+
+.activity-description {
+    display: none;
+}
+
 .poem {
     display: flex;
     flex-direction: column;
 }
 
-.row-informal img {
-    width: 300px;
-    height: 250px;
+.poem-text {
+    display: none;
 }
+
+#poem-img {
+    cursor: pointer; /* Indicate that the image is clickable */
+  }
+
+  .hidden {
+    display: none; /* Hides the element from view */
+  }
+  
+  .visible {
+    display: block; /* Makes the element visible */
+  }
+
 
 

@@ -28,3 +28,29 @@ bookIcon.src = './Images/' + perceptionType + '_book.jpg';
 
 const bookDefinition = document.querySelector('#poem-text');
 bookDefinition.innerText = perception[perceptionType].book;
+
+document.getElementById("poem-img").addEventListener("click", function() {
+    const textContent = document.getElementById("poem-text");
+    
+    // Toggle classes to show/hide the text
+    if (textContent.classList.contains("hidden")) {
+      textContent.classList.remove("hidden");
+      textContent.classList.add("visible");
+    } else {
+      textContent.classList.remove("visible");
+      textContent.classList.add("hidden");
+    }
+  });
+
+  document.getElementById("activity-img").addEventListener("click", function() {
+    const textContent = document.getElementById("activity-description");
+    
+    // Toggle classes to show/hide the text
+    if (textContent.classList.contains("hidden")) {
+      textContent.classList.remove("hidden");
+      textContent.classList.add("visible");
+    } else {
+      textContent.classList.remove("visible");
+      textContent.classList.add("hidden");
+    }
+  });
