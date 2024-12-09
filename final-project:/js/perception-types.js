@@ -1,12 +1,14 @@
 const perception = {
     "visual-spatial": {
         "definition": "the human ability to think in images and pictures--the capacity to visualize accurately and abstractly",
-        "music": "drawing diagrams, making collages, taking photos, puzzles, playing sports, using maps"
+        "music": "drawing diagrams, making collages, taking photos, puzzles, playing sports, using maps",
+        "book": "Patterns hum, shapes entwine, a dance of lines, a realm divine. Eyes map the maze; spce speaks: design."
     },
 
     "logical-mathematical": {
         "definition": "the human ability to think in images and pictures--the capacity to visualize accurately and abstractly",
         "music": "programming, building systems, observing patterns in nature, writing mysteries, music composition"
+        "book": "Numbers pulse, reason flows, a lattice where the order grows. Mind computes; the cosmos shows."
     },
     
     "supervised": {
