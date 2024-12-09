@@ -24,4 +24,4 @@ const bookIcon = document.querySelector('#poem-img');
 bookIcon.src = './Images/' + perceptionType + '_book.jpg';
 
 const musicDefinition = document.querySelector('#activity-description');
-musicDefinition.innerText = perception[perceptionTyle].music
+musicDefinition.innerText = perception[perceptionType].music;
