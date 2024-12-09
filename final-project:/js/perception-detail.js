@@ -20,8 +20,11 @@ styleDefinition.innerText = perception[perceptionType].definition;
 const musicIcon = document.querySelector('#activity-img');
 musicIcon.src = './Images/' + perceptionType + '_music.jpg';
 
+const musicDefinition = document.querySelector('#activity-description');
+musicDefinition.innerText = perception[perceptionType].music;
+
 const bookIcon = document.querySelector('#poem-img');
 bookIcon.src = './Images/' + perceptionType + '_book.jpg';
 
-const musicDefinition = document.querySelector('#activity-description');
-musicDefinition.innerText = perception[perceptionType].music;
+const bookDefinition = document.querySelector('#poem-text');
+bookDefinition.innerText = perception[perceptionType].book;
