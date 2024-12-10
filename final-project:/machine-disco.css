@@ -77,9 +77,9 @@ nav a {
 
 .char1 { color: #FF2470; }
 
-.char2 {color: #D0427B; }
+.char2 { color: #D0427B; }
 
-.char3 {color: #239976; }
+.char3 { color: #239976; }
 
 .char4 { color: #823DDC; }
 
@@ -112,7 +112,7 @@ nav a {
 }
 
 #logical-mathematical {
-    color: #4EAB7F;
+    color: #206c48;
 }
 
 #supervised {
@@ -120,7 +120,7 @@ nav a {
 }
 
 #unsupervised {
-    color: #FF6ACD;
+    color: #ba5197;
 }
 
 #humans-vs-machines {
