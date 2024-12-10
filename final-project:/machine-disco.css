@@ -59,46 +59,49 @@ nav a {
 
 #machine-disco-color {
     font-size: 150px;
-}
-
-.color-span {
-    display: inline-block;
     align-items: center;
-  } 
-
-  /* #machine-disco-color #m { color: red; }
-  #machine-disco-color #a { color: orange; }
-  #machine-disco-color #c { color: yellow; }
-  #machine-disco-color #h { color: green; }
-  #machine-disco-color #i { color: blue; }
-  #machine-disco-color #n { color: indigo; }
-  #machine-disco-color #e { color: violet; }
-  #machine-disco-color #disco { color: pink; } */
-
-#machine-disco-color #m { color: #FF2470}
-
-#machine-disco-color #a {color: #D0427B;}
-
-#machine-disco-color #c {color: #239976;}
-
-#h {
-    color: #823DDC;
+    background-color: #FF6ACD;
 }
 
-#i {
-    color: #FF4A4A;
-}
+/* #machine-disco-color {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  } */
 
-#n {
-    color: #653FF0;
-}
+#machine-disco-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height for centering */
+    text-align: center; /* Ensures text is centered within the div */
+  }
+  
+  .nevada {
+    display: inline-block; /* Prevent Textillate from affecting alignment */
+  }
 
-#e {
-    color: #4AA351;
-}
+.char1 { color: #FF2470; }
 
-#disco {
+.char2 {color: #D0427B; }
+
+.char3 {color: #239976; }
+
+.char4 { color: #823DDC; }
+
+.char5 { color: #FF4A4A; }
+
+.char6 { color: #653FF0; }
+
+.char7 { color: #4AA351; }
+
+#disco { color: #c238c2; }
+
+#disco-meaning {
     color: #c238c2;
+    font-style: italic;
 }
 
 
@@ -135,7 +138,10 @@ nav a {
 .main-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
