@@ -61,17 +61,25 @@ nav a {
     font-size: 150px;
 }
 
-#m {
-    color: #FF2470
-}
+.color-span {
+    display: inline-block;
+    align-items: center;
+  } 
 
-#a {
-    color: #D0427B;
-}
+  /* #machine-disco-color #m { color: red; }
+  #machine-disco-color #a { color: orange; }
+  #machine-disco-color #c { color: yellow; }
+  #machine-disco-color #h { color: green; }
+  #machine-disco-color #i { color: blue; }
+  #machine-disco-color #n { color: indigo; }
+  #machine-disco-color #e { color: violet; }
+  #machine-disco-color #disco { color: pink; } */
 
-#c {
-    color: #239976;
-}
+#machine-disco-color #m { color: #FF2470}
+
+#machine-disco-color #a {color: #D0427B;}
+
+#machine-disco-color #c {color: #239976;}
 
 #h {
     color: #823DDC;
