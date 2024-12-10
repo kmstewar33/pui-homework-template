@@ -266,21 +266,24 @@ nav a {
 
 #poem-img {
     cursor: pointer; /* Indicate that the image is clickable x chatgpt */
-  }
+}
 
-  .hidden {
+.hidden {
     display: none; /* Hides the element from view x chatgpt */
-  }
-  
-  .visible {
+}
+
+.visible {
     display: block; /* Makes the element visible x chatgpt */
-  }
+} 
+  
 
 /* responsiveness */
 
-@media (max-width: 480px) {
-    .word1, .word2 {
+@media (max-width: 500px) {
+    .word1, .word2,
+    #machine-disco-color{
       font-size: 40px;
+      /* background-color:pink; */
     }
 
     .nevada {
@@ -292,4 +295,4 @@ nav a {
         padding: 10px 33px;
         font-size: 20px;
     }
-  }
+}
