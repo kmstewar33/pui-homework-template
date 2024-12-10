@@ -279,20 +279,6 @@ nav a {
 /* responsiveness */
 
 @media (max-width: 600px) {
-    #machine-disco {
-        font-size: 24px;
-    }
-
-    .md-page {
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-bottom: 14px;
-        font-size: 16px;
-    }
-    
-    #machine-disco-space {
-        height: 0px;
-    }
     
     .word1, .word2,
     #machine-disco-color{
@@ -308,6 +294,25 @@ nav a {
         border-radius: 30px;
         padding: 10px 33px;
         font-size: 20px;
+    }
+
+    #machine-disco {
+        font-size: 24px;
+    }
+
+    .md-page {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 14px;
+        font-size: 16px;
+    }
+    
+    #machine-disco-space {
+        height: 0px;
+    }
+
+    #humans-vs-machines {
+        font-size: 28px;
     }
 
     .main-content {
