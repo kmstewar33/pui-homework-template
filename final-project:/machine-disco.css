@@ -278,20 +278,3 @@ nav a {
 
 /* responsiveness */
 
-@media (max-width: 480px) {
-    .word1, .word2 {
-      font-size: 40px;
-    }
-
-    .nevada {
-        margin: 12px;
-    }
-
-    #start-demo-btn button {
-        border-radius: 30px;
-        padding: 10px 33px;
-        font-size: 20px;
-    }
-  }
-
-
