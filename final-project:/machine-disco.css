@@ -48,6 +48,7 @@ nav a {
     margin-bottom: 14px;
     text-decoration: none;
     color: white;
+    font-size: 28px;
 }
 
 /* cover */
@@ -189,6 +190,15 @@ nav a {
 }
 
 /* detail */
+
+.header {
+    align-items: center;
+}
+
+#instructions {
+    align-items: center;
+}
+
 .grid-detail {
     display: flex;
     flex-direction: column;
@@ -199,7 +209,7 @@ nav a {
 
 .row-formal {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .style-img {
@@ -232,7 +242,7 @@ nav a {
 }
 
 #activity-img {
-    cursor: pointer; /* Indicate that the image is clickable */
+    cursor: pointer; /* Indicate that the image is clickable x chatgpt */
 }
 
 .activity-description {
@@ -249,16 +259,17 @@ nav a {
 }
 
 #poem-img {
-    cursor: pointer; /* Indicate that the image is clickable */
+    cursor: pointer; /* Indicate that the image is clickable x chatgpt */
   }
 
   .hidden {
-    display: none; /* Hides the element from view */
+    display: none; /* Hides the element from view x chatgpt */
   }
   
   .visible {
-    display: block; /* Makes the element visible */
+    display: block; /* Makes the element visible x chatgpt */
   }
+
 
 
 
