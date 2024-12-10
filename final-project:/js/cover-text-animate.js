@@ -6,7 +6,7 @@ $(document).ready(function() {
       in: { effect: 'fadeIn' },
       in: { effect: 'flash' },
       out: { effect: 'fadeOut' },
-      out: { effect: 'flash'},
+      out: { effect: 'shake'},
       loop: true
     }); // This should animate the text x chatgpt, modifications to flash & bounce by me
   });

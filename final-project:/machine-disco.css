@@ -60,27 +60,19 @@ nav a {
 #machine-disco-color {
     font-size: 150px;
     align-items: center;
-    background-color: #FF6ACD;
 }
-
-/* #machine-disco-color {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  } */
 
 #machine-disco-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full viewport height for centering */
-    text-align: center; /* Ensures text is centered within the div */
+    text-align: center; /* Ensures text is centered within the div x chatgpt */
   }
   
   .nevada {
-    display: inline-block; /* Prevent Textillate from affecting alignment */
+    display: inline-block; /* Prevent Textillate from affecting alignment x my friend chatgpt */
   }
 
 .char1 { color: #FF2470; }
@@ -199,7 +191,7 @@ nav a {
 }
 
 #start-demo-btn {
-    padding-top: 30px;
+    /* padding-top: 30px; */
     padding-bottom: 40px;
 }
 

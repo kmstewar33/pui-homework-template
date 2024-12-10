@@ -29,7 +29,7 @@ bookIcon.src = './Images/' + perceptionType + '_book.jpg';
 const bookDefinition = document.querySelector('#poem-text');
 bookDefinition.innerText = perception[perceptionType].book;
 
-document.getElementById("style-img").addEventListener("click", function() {
+document.getElementById("style-img").addEventListener("mouseover", function() {
     const textContent = document.getElementById("style-definition");
     
     // Toggle classes to show/hide the text
