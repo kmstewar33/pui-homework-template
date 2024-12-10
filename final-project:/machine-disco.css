@@ -297,7 +297,11 @@ nav a {
     }
 
     #machine-disco {
-        font-size: 24px;
+        font-size: 28px;
+    }
+
+    .md-logo {
+        padding-left: 15px;
     }
 
     .md-page {
@@ -313,14 +317,21 @@ nav a {
 
     #humans-vs-machines {
         font-size: 28px;
+        text-align: center;
     }
 
     .main-content {
         font-size: 10px;
     }
 
-    img {
-        width: 200px;
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid img {
+        width: 150px;
+        height: 150px;
     }
 
     .row-informal img {
