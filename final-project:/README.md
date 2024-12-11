@@ -121,7 +121,7 @@ Document the changes and progress of your project. How have you followed or chan
 
 ## Generative AI Use Plan Updates
 
-- [ ] No updates.
+- [x] No updates.
 
 Remember to keep track of your prompts and usage for [FP4 writeup](#part-6-generative-ai-use-and-reflection).
 
