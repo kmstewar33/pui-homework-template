@@ -109,6 +109,28 @@ Document the usage logs (prompts and chat history links) for the GenAI tools you
 2. Perplexity
    N/A
 
+## Part 7: Responsiveness
+
+Intended for Desktop Viewing #1
+Break point for Mobile Viewing at 600px for Mobile #2
+
+## Part 8: Accessibility Requirements
+
+All 6 pages of my website passed the Wave Accessibility Errors/Contrast Errors test. At first, I had to ensure that the colors selected on the machine disco cover page were compliant by making them darker to heighten the contrast.
+
+![machine disco cover - summary](Images/cover_wave-pass.png)
+! [machine disco cover - detail](Images/cover_wave-pass-detail.png)
+![machine disco glossary - summary](Images/glossary_wave-pass.png)
+![machine disco glossary - detail](Images/glossary_wave-pass-detail.png)
+![machine disco percep1 - summary](Images/percep1_wave-pass.png)
+![machine disco percep1 - detail](Images/percep1_wave-pass-detail.png)
+![machine disco percep2 - summary](Images/percep2_wave-pass.png)
+![machine disco percep2 - detail](Images/percep2_wave-pass-detail.png)
+![machine disco percep3 - summary](Images/percep3_wave-pass.png)
+![machine disco percep3 - detail](Images/percep3_wave-pass-detail.png)
+![machine disco percep4 - summary](Images/percep4_wave-pass.png)
+![machine disco percep4 - detail](Images/percep4_wave-pass-detail.png)
+
 ---
 
 # **FP3 \- Final Project Check-in**
