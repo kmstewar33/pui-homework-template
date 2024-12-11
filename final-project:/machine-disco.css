@@ -334,8 +334,20 @@ nav a {
         height: 150px;
     }
 
+    .row-formal img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .row-informal {
+        display: flex;
+        flex-direction: column;
+    }
+
     .row-informal img {
         width: 200px;
         height: 150px;
     }
+
+    
 }
