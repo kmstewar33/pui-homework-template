@@ -57,19 +57,10 @@ A few times, I copied code directly from ChatGPT that I understood, but wasn't i
 
 ### Usage Experiences by Project Aspects
 
-Feel free to edit the column \_ (other?) or add more columns if there's any other aspect in your project you've used the GenAI tools for.
-
-For the following aspects of your project, edit the corresponding table cell to answer:
-
-- _Usage_: Whether you used / did not use this tool for the aspect. Enter [Yes/No]
-- _Productivity_: Give a rating on whether this tool makes your productivity for X aspect [1-Much Reduced, 2-Reduced, 3-Slightly Reduced, 4-Not Reduced nor Improved, 5-Slightly Improved, 6-Improved, 7-Much Improved].
-
-| Tool Name | Ratings | design | plan | write code | debug | content generation |
-
-| ChatGPT | Usage | No | Yes | Yes | Yes | Yes/No |
+| ChatGPT | Usage | design - No | plan - Yes | write code - Yes | debug - Yes | content generation - Yes |
 | ChatGPT | Productivity | 4 | 6 | 6 | 7 | 4 |
 
-| Perplexity | Usage | No | No | No | No | No |
+| Perplexity | Usage | design - No | plan - No | write code - No | debug - No | content generation - No |
 | Perplexity | Productivity | 4 | 4 | 4 | 4 | 4 |
 
 ### Usage Reflection
