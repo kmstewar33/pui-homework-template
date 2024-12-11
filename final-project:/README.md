@@ -55,6 +55,10 @@ Describe how you used Generative AI tools to create this final project (fill in 
 
 Document your use of all GenAI tools — ChatGPT, Copilot, Claude, Cursor, etc. using the template below. Add/Delete rows or bullet points if needed, and replace Tool1/Tool2 with the name of the tool.
 
+In the vein of machine disco, I definitely struggle with algorithmic thinking, and I prefer a top-down approach to learning a new subject, especially ones in STEM. While I generally understood each block of what we learned throughout the class on its own, I had trouble linking everything together when starting a new project, so I frequently asked a top-down query to ChatGPT such as "how would you do this x?" and its response influenced my thought process through the project.
+
+A few times, I copied code directly from ChatGPT that I understood, but wasn't interested in retyping myself. During our lab presentations, I was struck by other students' projects that were more advanced than mine. While I do not think they arrived where they did because of GenAI, I did think it was interesting that they seemed to understand that advanced programming (from my understanding) is linking pieces of functionality together to build something complex. However! You clearly still need to understand the nuances of each piece in order to link them together. I feel like my use of ChatGPT is similar. I asked it to create the function for adding the clicking event listener because some of the symbols in that syntax are too vague and still confuse me, but I understand what each piece of the function means on recognition.
+
 ### Usage Experiences by Project Aspects
 
 Feel free to edit the column \_ (other?) or add more columns if there's any other aspect in your project you've used the GenAI tools for.
@@ -64,12 +68,13 @@ For the following aspects of your project, edit the corresponding table cell to 
 - _Usage_: Whether you used / did not use this tool for the aspect. Enter [Yes/No]
 - _Productivity_: Give a rating on whether this tool makes your productivity for X aspect [1-Much Reduced, 2-Reduced, 3-Slightly Reduced, 4-Not Reduced nor Improved, 5-Slightly Improved, 6-Improved, 7-Much Improved].
 
-| Tool Name | Ratings      | design | plan   | write code | debug  | \_ (other?) |
-| :-------- | :----------- | :----- | :----- | :--------- | :----- | :---------- |
-| Tool1     | Usage        | Yes/No | Yes/No | Yes/No     | Yes/No | Yes/No      |
-| Tool1     | Productivity | 1~7    | 1~7    | 1~7        | 1~7    | 1~7         |
-| Tool2     | Usage        | Yes/No | Yes/No | Yes/No     | Yes/No | Yes/No      |
-| Tool2     | Productivity | 1~7    | 1~7    | 1~7        | 1~7    | 1~7         |
+| Tool Name | Ratings | design | plan | write code | debug | content generation |
+
+| ChatGPT | Usage | No | Yes | Yes | Yes | Yes/No |
+| ChatGPT | Productivity | 4 | 6 | 6 | 7 | 4 |
+
+| Perplexity | Usage | No | No | No | No | No |
+| Perplexity | Productivity | 4 | 4 | 4 | 4 | 4 |
 
 ### Usage Reflection
 
@@ -118,11 +123,11 @@ Document the changes and progress of your project. How have you followed or chan
 
 ## Implementation Plan Updates
 
-- [ ] ...
+- [x] Roadblocks. Talked to my TA to modify the project scope and deliverable.
 
 ## Generative AI Use Plan Updates
 
-- [ ] ...
+- [ ] No updates.
 
 Remember to keep track of your prompts and usage for [FP4 writeup](#part-6-generative-ai-use-and-reflection).
 
