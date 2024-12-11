@@ -20,18 +20,26 @@ Initially designed to be a visual learning toolkit to accompany supervised machi
 
 How a user would interact with your website? For each step, briefly but clearly state the interaction type & how we should reproduce it.
 
-1. Interaction type. Click on X on page Y / scroll on page X, etc.
-2.
+1. Click. Click on the "start dancing" button on the cover page.
+2. Click. Click on one of the four perception styles on the glossary page.
+3. Click. Click on one of the three doodle icons on the perception detail page.
+4. Click. Click on one of the three doodle icons to remove the text from view on the perception detail page.
 
 ## Part 3: External Tool
 
 Describe what important external tool you used (JavaScript library, Web API, animations, or other). Following the bulleted list format below, reply to each of the prompts.
 
-1. Name of tool1
-   - Why did you choose to use it over other alternatives? (2 sentences max)
-   - How you used it? (2 sentences max)
-   - What does it add to your website? (2 sentences max)
-2. Name of tool2
+1. jQuery
+
+- I chose to use jQuery because I struggled to understand what a library was and which one I should use to implement my original idea (visual toolkit for machine learning), and since I have never programmed before, I thought it would be more useful due to time and energy to start smaller. jQuery was a great first time example of a library because it showed me how simple it was to incorporate a library based on what I already understood of JavaScript--you just download the JS file and organize it within your folders, link it to the proper html page, and double check that jQuery is linked via the console.
+- I used jQuery to set-up Textillate to animate the cover page for machine disco.
+- Adding jQuery allowed me to use animate.css, lettering.js and textillate.js outside of plain JavaScript.
+
+2. Lettering & Textillate & Animate.CSS
+
+- I decided to use these plug-ins because I was interested in how all 3 of them worked together--it's also interesting to me how each file takes on a separate aspect of the animated text execution (animate = flash, bounce, etc. in the styling; lettering allows each letter to be selected to enable the animation and textillate pulls it all together).
+- I used these 3 for the cover page. I also had fun figuring out how to find the correct class for each letter to keep the individuall colored letters I had planned on in my design--I had to dig into the inspect/textillate span class assignments to figure it out.
+- The animation simulates the motion and excitement that one thinks of when you see the word "disco," and is a great introduction to the abstractions of the website.
 
 ## Part 4: Design Iteration
 
