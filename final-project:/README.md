@@ -81,32 +81,32 @@ For the following aspects of your project, edit the corresponding table cell to 
 > Impact on your design and plan
 
 - It matched my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example,
-  1. Tool1:
-  2. Tool2:
+  1. ChatGPT: I was able to get help with creating the content for each perception style (but I modified given examples for the activities based on my preference; the poem was a direct copy since ChatGPT was supposed to be the "author"), and it was helpful for debugging, especially when I was trying to understand how to make each letter modified by textillate a different color (as I had it prior to adding textillate using html spans/ids for css), however, I actually ended up solving the problem myself by looking deeply into the inspect to find the right class to assign a color to and resolved the issue without ChatGPT. It did really help me with my basic understanding of media queries and the event listener function (I get but don't get the =>> (emptly parenthesis thing)... it's too vague to me).
+  2. Perplexity: I ended up not using.
 - It did not match my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example,
-  1. Tool1:
-  2. Tool2:
+  1. ChatGPT: it ended up being as helpful as I imagined for generating code and debugging, except I was able to use other methods for debugging for what really mattered (inspect, the console, a classmate).
+  2. Perplexity: I did not end up using.
 - GenAI tool did/did not influence my final design and implementation plan because … For example,
-  1. Tool1:
-  2. Tool2:
+  1. ChatGPT: I think it did influence my final design and implementation plan by giving me more confidence that I could problem solve something unfamiliar to me while under a deadline. What I copied from it initially was ultimately an example (except for the JS event listener) that I learned from and could then modify and replicate on my own. Ultimately, it would probably be faster to just practice more on my own and become fluent in computer than stopping and asking ChatGPT, but for now, it's my top-down query helper when I'm working by myself.
+  2. Perplexity: I ended up not using.
 
 > Use patterns
 
 - I accepted the generations when … For example,
-  1. Tool1: this tool once suggested … and I adjusted my design according to the suggestion because …
-  2. Tool2:
+  1. ChatGPT: I accepted the generations when it was for content I could modify/approve or it was code that I understood and could verify by using in the project and seeing the result, as well as checking with W3Schools (sometimes their examples are still too confusing without context when you first read the article). I also used it as part of my debugging process, but eventually, I needed it less and less.
+  2. Perplexity: N/A
 - I critiqued/evaluated the generated suggestions by … For example,
-  1. Tool1: this tool once suggested … but I modified/rejected the suggestion because …
-  2. Tool2:
+  1. ChatGPT: this tool once suggested I add a class that didn't make sense while troubleshooting the textillate/span single letter color assignment problem. I reviewed my code to confirm my hunch, corrected it, told it what it did was wrong, and was able to get a better response that helped me moving forward.
+  2. Perplexity: N/A
 
 > Pros and cons of using GenAI tools
 
 - Pros
-  1. Tool1:
-  2. Tool2:
+  1. ChatGPT: we talk often, so it usually gives me a customized response and understands how I like to receive information.
+  2. Perplexity: it immediately verifies websites it pulls information from.
 - Cons
-  1. Tool1:
-  2. Tool2:
+  1. ChatGPT: one time it did ask me to do something that didn't make sense, and I checked it.
+  2. Perplexity: I don't use it enough to have it talk to me like a human rather than a robot.
 
 ### Usage Log
 
