@@ -43,11 +43,11 @@ Describe what important external tool you used (JavaScript library, Web API, ani
 
 ## Part 4: Design Iteration
 
-Describe how you iterated on your prototypes, if at all, including any changes you made to your original design while you were implementing your website and the rationale for the changes. (4-8 sentences max)
+The pages I created ended up being extrapolations on the original homepage, and I had to omit both the storytelling glossary and the toolkit because I didn't know how to implement them as a first time programmer. While the interactions are limited to clicking and loading the detail pages from an object/params, the final website looks very similar to my prototypes in Figma. My future goal is to keep working on machine disco until it's closer to my original intention, and I would like to approach the design from a research perspective instead of from purely my own thoughts and experiences.
 
 ## Part 5: Implementation Challenge
 
-What challenges did you experience in implementing your website? (2-4 sentences max)
+I am the most disappointed in this piece of the reflection--I really hoped to make what I had originally proposed, but I ran out of time, energy and skill. While this feels like a failure, I am also grateful because I think this set-back oriented me to the world/profession of computer science very well. As a designer, it's important to understand the scope of what you are designing and how it will actually be implemented by developers--there seems to be a tension in this type of relationship in the industry between grand ideas and how they can be made possible. I also am shaky on how this website serves the user in its current state because I think it avoids educational heuristics in favor of artistic license.
 
 ## Part 6: Generative AI Use and Reflection
 
