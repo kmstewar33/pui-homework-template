@@ -105,15 +105,22 @@ For the following aspects of your project, edit the corresponding table cell to 
   1. ChatGPT: we talk often, so it usually gives me a customized response and understands how I like to receive information.
   2. Perplexity: it immediately verifies websites it pulls information from.
 - Cons
-  1. ChatGPT: one time it did ask me to do something that didn't make sense, and I checked it.
+  1. ChatGPT: one time it did ask me to do something that didn't make sense, and I checked it. I think I use it as a crutch after looking through all the threads. I think a pattern with me using GenAI is that it gives so much information, I skim it, I take an inspiring piece and go manipulate it further in the world, but I also think I use it to stall or parse topics I am worried about--not because I can't understand them, but because they are yet to be discovered.
   2. Perplexity: I don't use it enough to have it talk to me like a human rather than a robot.
 
 ### Usage Log
 
 Document the usage logs (prompts and chat history links) for the GenAI tools you used. Some tools may not have an easy way to share usage logs, just try your best! Some instructions for different tools:
 
-1. [ChatGPT](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) / [Gemini](https://support.google.com/gemini/answer/13743730?hl=en&co=GENIE.Platform%3DDesktop): share the anonymous link to all of your chat histories relevant to this project
-2. [GitHub Copilot (VSCode)](<https://code.visualstudio.com/docs/copilot/copilot-chat#:~:text=You%20can%20export%20all%20prompts%20and%20responses%20for%20a%20chat%20session%20in%20a%20JSON%20file%20with%20the%20Chat%3A%20Export%20Session...%20command%20(workbench.action.chat.export)%20in%20the%20Command%20Palette.>): export chat histories relevant to this project.
+1. ChatGPT
+   Toggle Image Text Visibility (https://chatgpt.com/share/67590ab4-a254-800c-8c9c-6533348103db)
+   jQuery vs Vanilla JavaScript (https://chatgpt.com/share/67590c2d-5f2c-800c-89f0-08d6abf48c0e)
+   Poems on Learning Types (https://chatgpt.com/share/67590c4b-1b14-800c-8cb7-d9071278d742)
+   Visual-Spatial Activities Overview (https://chatgpt.com/share/67590c7b-9b68-800c-8b5d-561b04ea89d3)
+   Human vs Machine Learning (https://chatgpt.com/share/67590cc7-011c-800c-9fb0-a80b1380c7f9)
+
+2. Perplexity
+   N/A
 
 ---
 
