@@ -263,6 +263,12 @@ nav a {
 
 .activity-description {
     display: none;
+    width: 100px;
+}
+
+.detail-space {
+    height: 100px;
+    width: 100px;
 }
 
 .poem {
