@@ -51,10 +51,6 @@ I am the most disappointed in this piece of the reflection--I really hoped to ma
 
 ## Part 6: Generative AI Use and Reflection
 
-Describe how you used Generative AI tools to create this final project (fill in the following information, write \~500 words in total).
-
-Document your use of all GenAI tools — ChatGPT, Copilot, Claude, Cursor, etc. using the template below. Add/Delete rows or bullet points if needed, and replace Tool1/Tool2 with the name of the tool.
-
 In the vein of machine disco, I definitely struggle with algorithmic thinking, and I prefer a top-down approach to learning a new subject, especially ones in STEM. While I generally understood each block of what we learned throughout the class on its own, I had trouble linking everything together when starting a new project, so I frequently asked a top-down query to ChatGPT such as "how would you do this x?" and its response influenced my thought process through the project.
 
 A few times, I copied code directly from ChatGPT that I understood, but wasn't interested in retyping myself. During our lab presentations, I was struck by other students' projects that were more advanced than mine. While I do not think they arrived where they did because of GenAI, I did think it was interesting that they seemed to understand that advanced programming (from my understanding) is linking pieces of functionality together to build something complex. However! You clearly still need to understand the nuances of each piece in order to link them together. I feel like my use of ChatGPT is similar. I asked it to create the function for adding the clicking event listener because some of the symbols in that syntax are too vague and still confuse me, but I understand what each piece of the function means on recognition.
