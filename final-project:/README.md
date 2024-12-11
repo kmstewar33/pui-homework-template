@@ -118,10 +118,18 @@ Break point for Mobile Viewing at 600px for Mobile #2
 
 All 6 pages of my website passed the Wave Accessibility Errors/Contrast Errors test. At first, I had to ensure that the colors selected on the machine disco cover page were compliant by making them darker to heighten the contrast.
 
+### machine disco cover
+
 ![machine disco cover - summary](Images/cover_wave-pass.png)
-! [machine disco cover - detail](Images/cover_wave-pass-detail.png)
+![machine disco cover - detail](Images/cover_wave-pass-detail.png)
+
+### machine disco glossary
+
 ![machine disco glossary - summary](Images/glossary_wave-pass.png)
 ![machine disco glossary - detail](Images/glossary_wave-pass-detail.png)
+
+### machine disco perceptions
+
 ![machine disco percep1 - summary](Images/percep1_wave-pass.png)
 ![machine disco percep1 - detail](Images/percep1_wave-pass-detail.png)
 ![machine disco percep2 - summary](Images/percep2_wave-pass.png)
